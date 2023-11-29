@@ -26,10 +26,13 @@ const LoginScreen = () => {
 
     return (
 
-        <View style={styles.container}>
-            <TouchableOpacity >
-                <Icon name="arrow-left" size={20} color="#134286" style={styles.arrowButton} />
-            </TouchableOpacity>
+        <View style={{justifyContent: 'space-between'}}>
+        <Text>
+    
+        </Text>
+
+            <View style={styles.container}>
+           
 
             <Image
                 style={styles.logo}
@@ -86,6 +89,7 @@ const LoginScreen = () => {
                 </TouchableOpacity>
             </View>
 
+        </View>
         </View>
     );
 };

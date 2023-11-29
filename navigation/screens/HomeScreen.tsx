@@ -1,30 +1,48 @@
 import React from 'react';
 import MapView from 'react-native-maps';
-import { StyleSheet, View, TextInput, Text } from 'react-native';
+import BottomSheet from '@gorhom/bottom-sheet';
+import { StyleSheet, View, TextInput, Text, ScrollView } from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Image } from 'react-native';
+import GoogleMap from '../../compoment/GoogleMap';
+import CategoryView from '../../compoment/CategoryView';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Ionicons from 'react-native-vector-icons/Ionicons'
+
 
 export default function HomeScreen() {
-    const phnomPenhRegion = {
-        latitude: 11.5564,
-        longitude: 104.9282,
-        latitudeDelta: 0.05,
-        longitudeDelta: 0.05,
-    };
-
     return (
         <View style={styles.container}>
-            <MapView style={styles.map} region={phnomPenhRegion} />
-            <Text style={{fontSize: 40, fontWeight: 'bold', color: 'white'}}>Coming Soon!</Text>
+            <GoogleMap />
+            <View style={{ marginTop: 1 }}>
+                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
 
+                    <CategoryView text="All" hasIcon={false} iconName="shopping-store" />
+                    <CategoryView text="Mobile Services" hasIcon={false} iconName="shopping-store" />
+                    <CategoryView text="Shops" hasIcon={true} iconName="shopping-store" />
+                    <CategoryView text="Professors" hasIcon={true} iconName="scissors" />
+
+
+                </ScrollView>
+
+
+            </View>
+            <View style={{ flex: 1, justifyContent: 'center', alignContent: 'flex-end', marginLeft: '85%' }}>
+                <View style={{ width: 40, height: 40, borderRadius: 40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', marginBottom: 10 }}>
+                    <Ionicons name="reload" size={22}></Ionicons>
+                </View>
+                <View style={{ width: 40, height: 40, borderRadius: 40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center' }}>
+                    <MaterialIcon name="my-location" size={22}></MaterialIcon>
+                </View>
+
+            </View>
             <View style={styles.searchBar}>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}><Icon name="menu" size={30} />
-                    <TextInput
-                        style={styles.searchInput}
-                        placeholder="Search Salon..."
-                    /></View>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Icon name="menu" size={30} />
+                    <TextInput style={styles.searchInput} placeholder="Search Salon..." />
+                </View>
                 <View style={styles.iconsearchLangNotify}>
                     <MaterialIcon name="search" size={20} />
                     <Image
@@ -35,6 +53,7 @@ export default function HomeScreen() {
                     <MaterialIcon name="notifications-none" size={20} />
                 </View>
             </View>
+
         </View>
     );
 }
@@ -43,19 +62,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#16247d',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    map: {
-        width: '100%',
-        height: '100%',
-        bottom: -25,
+
     },
 
-    searchText: {
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
     searchBar: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -63,13 +72,12 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#ccc',
         position: 'absolute',
-        top: 40, 
+        top: 40,
         left: 10,
         right: 10,
         backgroundColor: 'white',
         borderRadius: 5,
-        elevation: 4,
-        zIndex: 1000, // Adjust the zIndex to make sure it's on top of the map
+        elevation: 4, // Adjust the zIndex to make sure it's on top of the map
     },
     searchInput: {
         height: 30,
@@ -87,4 +95,6 @@ const styles = StyleSheet.create({
         height: 20,
         // other styles as needed
     },
+
+
 });

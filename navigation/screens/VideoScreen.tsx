@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, TextInput, ScrollView, Dimensions} from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, TextInput, ScrollView, Dimensions } from 'react-native'
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo';
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
@@ -34,7 +34,7 @@ const VideoScreen = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
 
-                    
+
                 }}>
                 <Feather
                     onPress={() => {
@@ -45,19 +45,19 @@ const VideoScreen = () => {
                     style={{
                         position: 'absolute',
                         left: 10,
-                        
+
                         color: 'white',
                     }}
                 />
                 <View style={{ width: Dimensions.get('window').width }}>
-                <Text
-                    style={{
-                        textAlign: 'center', color: 'white', fontSize: 20,
-                    }}>
-                   Videos
-                </Text>
+                    <Text
+                        style={{
+                            textAlign: 'center', color: 'white', fontSize: 20,
+                        }}>
+                        Videos
+                    </Text>
                 </View>
-               
+
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View>
@@ -74,19 +74,19 @@ const VideoScreen = () => {
 
 
 
-                <View style={{marginBottom: 150}}>
-                <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/cat.jpg')} description="ធ្វើការកក់ទុកជាមុននៅរាល់ជាងនឹងសេវាកម្មដែលបងប្អូនពេញចិត្ដ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/cat1.jpeg')} description="តោះស្វែងយល់ពីរបៀបចុះឈ្មោះក្នុងការប្រើប្រាស់ App Unisalon" date="17 Dec 2023 at 11:59 AM" />
-                <Card3 image={require('../../assets/cat2.jpg')} description="សម្រស់របស់អស់លោកអ្នក គឺជាអទិភាពរបស់យើង" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
-                <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
+                <View style={{ marginBottom: 150 }}>
+                    <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/cat.jpg')} description="ធ្វើការកក់ទុកជាមុននៅរាល់ជាងនឹងសេវាកម្មដែលបងប្អូនពេញចិត្ដ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/cat1.jpeg')} description="តោះស្វែងយល់ពីរបៀបចុះឈ្មោះក្នុងការប្រើប្រាស់ App Unisalon" date="17 Dec 2023 at 11:59 AM" />
+                    <Card3 image={require('../../assets/cat2.jpg')} description="សម្រស់របស់អស់លោកអ្នក គឺជាអទិភាពរបស់យើង" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
+                    <Card3 image={require('../../assets/lambo_car.jpg')} description="ថ្ងៃស្អែកមកកាត់សក់ឥតគិតថ្លៃ" date="17 Dec 2021 at 11:59 AM" />
                 </View>
 
             </ScrollView>

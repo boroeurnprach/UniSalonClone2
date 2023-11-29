@@ -5,10 +5,8 @@ import LoginScreen from './navigation/LoginScreen'
 
 const App = () => {
   return (
-    <MainContainer/>
+    <MainContainer />
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({})
