@@ -26,70 +26,70 @@ const LoginScreen = () => {
 
     return (
 
-        <View style={{justifyContent: 'space-between'}}>
-        <Text>
-    
-        </Text>
+        <View style={{ justifyContent: 'space-between' }}>
+            <Text>
+
+            </Text>
 
             <View style={styles.container}>
-           
 
-            <Image
-                style={styles.logo}
-                source={require('../assets/splash.png')}
-            />
-            <View style={styles.inputView}>
-                <Text style={styles.nationCode}>+855 | </Text>
-                <TextInput
-                    style={styles.inputText}
-                    placeholder="Enter your number"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(text) => setState({ ...state, number: text })}
+
+                <Image
+                    style={styles.logo}
+                    source={require('../assets/splash.png')}
                 />
-            </View>
-            <View style={styles.inputPassView}>
-                <TextInput
-                    style={styles.inputText}
-                    secureTextEntry
-                    placeholder="Password"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(text) => setState({ ...state, password: text })}
-                />
-                <Icon name="eye" size={20} color="#003f5c" style={{ marginLeft: 10 }} />
-            </View>
-            <TouchableOpacity onPress={onPressLogin} style={styles.loginBtn}>
-                <Text style={styles.loginText}>LOGIN</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={onPressForgotPassword}>
-                <Text style={styles.forgotAndSignUpText}>Forgot Password?</Text>
-            </TouchableOpacity>
-
-            <View style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 20 }}>
-                <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', marginLeft: 10 }} />
-                <View>
-                    <Text>  or  </Text>
+                <View style={styles.inputView}>
+                    <Text style={styles.nationCode}>+855 | </Text>
+                    <TextInput
+                        style={styles.inputText}
+                        placeholder="Enter your number"
+                        placeholderTextColor="#003f5c"
+                        onChangeText={(text) => setState({ ...state, number: text })}
+                    />
                 </View>
-                <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', marginRight: 10 }} />
-            </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20 }}>
-                <TouchableOpacity onPress={onPressLogin} style={styles.retangle}>
-                    <Image
-                        style={styles.loginWithSocial}
-                        source={require('../assets/facebook_logo.png')}
+                <View style={styles.inputPassView}>
+                    <TextInput
+                        style={styles.inputText}
+                        secureTextEntry
+                        placeholder="Password"
+                        placeholderTextColor="#003f5c"
+                        onChangeText={(text) => setState({ ...state, password: text })}
                     />
-                    <Text style={styles.textSocial}>Login with Facebook</Text>
+                    <Icon name="eye" size={20} color="#003f5c" style={{ marginLeft: 10 }} />
+                </View>
+                <TouchableOpacity onPress={onPressLogin} style={styles.loginBtn}>
+                    <Text style={styles.loginText}>LOGIN</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={onPressLogin} style={styles.retangle}>
-                    <Image
-                        style={styles.loginWithSocial}
-                        source={require('../assets/google_logo.png')}
-                    />
-                    <Text style={styles.textSocial}>Login with Google</Text>
-                </TouchableOpacity>
-            </View>
 
-        </View>
+                <TouchableOpacity onPress={onPressForgotPassword}>
+                    <Text style={styles.forgotAndSignUpText}>Forgot Password?</Text>
+                </TouchableOpacity>
+
+                <View style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 20 }}>
+                    <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', marginLeft: 10 }} />
+                    <View>
+                        <Text>  or  </Text>
+                    </View>
+                    <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', marginRight: 10 }} />
+                </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20 }}>
+                    <TouchableOpacity onPress={onPressLogin} style={styles.retangle}>
+                        <Image
+                            style={styles.loginWithSocial}
+                            source={require('../assets/facebook_logo.png')}
+                        />
+                        <Text style={styles.textSocial}>Login with Facebook</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={onPressLogin} style={styles.retangle}>
+                        <Image
+                            style={styles.loginWithSocial}
+                            source={require('../assets/google_logo.png')}
+                        />
+                        <Text style={styles.textSocial}>Login with Google</Text>
+                    </TouchableOpacity>
+                </View>
+
+            </View>
         </View>
     );
 };

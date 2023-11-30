@@ -8,7 +8,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import Feather from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 
-const VideoScreen = ({navigation}) => {
+const VideoScreen = ({ navigation }) => {
     return (
 
         <View>
@@ -27,7 +27,7 @@ const VideoScreen = ({navigation}) => {
             <View
                 style={{
                     width: '100%',
-                    height: 60,
+                    height: 80,
                     backgroundColor: '#16247d',
                     flexDirection: 'row',
                     alignItems: 'center',
@@ -73,8 +73,12 @@ const VideoScreen = ({navigation}) => {
 
 
                 <View style={{ marginBottom: 150 }}>
-                    <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={navigation.navigate('ShopScreen')}/>
-                    
+                    <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={() => navigation.push('Videos')} />
+                    <Card3 image={require('../../assets/barber.png')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={() => navigation.push('Videos')} />
+                    <Card3 image={require('../../assets/boroeurn.jpg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={() => navigation.push('Videos')} />
+                    <Card3 image={require('../../assets/bird.jpeg')} description="ស្រស់ស្អាតជាមួយនឹងយើង" date="17 Dec 2021 at 11:59 AM" onPress={() => navigation.push('Videos')} />
+                    <Card3 image={require('../../assets/bird.jpeg')} description="ស្រស់ស្អាតជាមួយនឹងយើង" date="17 Dec 2021 at 11:59 AM" onPress={() => navigation.push('Videos')} />
+
                 </View>
 
             </ScrollView>
