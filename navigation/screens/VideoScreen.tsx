@@ -73,7 +73,7 @@ const VideoScreen = ({navigation}) => {
 
 
                 <View style={{ marginBottom: 150 }}>
-                    <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={navigation.navigate('ShopScreen')}/>
+                    <Card3 image={require('../../assets/bird.jpeg')} description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ" date="17 Dec 2021 at 11:59 AM" onPress={navigation.navigate('VideoPlayerScreen')}/>
                     
                 </View>
 

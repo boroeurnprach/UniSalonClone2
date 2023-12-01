@@ -28,39 +28,40 @@ const App = () => {
 
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='VideoPlayer'>
-        <Stack.Screen
-          name="VideoPlayer"
-          component={VideoPlayer}
-          options={{ headerShown: false }}
-        />
+    // <NavigationContainer>
+    //   <Stack.Navigator initialRouteName='VideoPlayer'>
+    //     <Stack.Screen
+    //       name="VideoPlayer"
+    //       component={VideoPlayer}
+    //       options={{ headerShown: false }}
+    //     />
 
-        <Stack.Screen
-          name="ShopScreen"
-          component={ShopScreen}
-          options={{ headerShown: false }}
-        />
+    //     <Stack.Screen
+    //       name="ShopScreen"
+    //       component={ShopScreen}
+    //       options={{ headerShown: false }}
+    //     />
 
-        <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Videos"
-          component={VideoPlayerScreen}
-          options={{ headerShown: true,
-            headerTitleAlign: 'center',
+    //     <Stack.Screen
+    //       name="HomeScreen"
+    //       component={HomeScreen}
+    //       options={{ headerShown: true }}
+    //     />
+    //     <Stack.Screen
+    //       name="Videos"
+    //       component={VideoPlayerScreen}
+    //       options={{ headerShown: true,
+    //         headerTitleAlign: 'center',
 
-            headerStyle: {
-              backgroundColor: '#16247d', // Set the app bar color to blue
-            },
-            headerTintColor: 'white',
-           }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    //         headerStyle: {
+    //           backgroundColor: '#16247d', // Set the app bar color to blue
+    //         },
+    //         headerTintColor: 'white',
+    //        }}
+    //     />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+    <MainContainer />
 
   )
 }

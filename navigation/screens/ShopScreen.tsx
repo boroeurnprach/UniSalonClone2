@@ -11,8 +11,8 @@ import { useNavigation } from '@react-navigation/native';
 import Card from '../../Card';
 import Card2 from '../../Card2';
 import { MaterialIcons } from '@expo/vector-icons';
-const ShopScreen = () => {
-    const navigation: any = useNavigation();
+import { TouchableOpacity } from 'react-native-gesture-handler';
+const ShopScreen = ({ navigation }) => {
     return (
 
         <View>
@@ -39,19 +39,23 @@ const ShopScreen = () => {
 
 
                 }}>
-                <Feather
-                    onPress={() => {
-                        navigation.openDrawer();
-                    }}
-                    name="menu"
-                    size={24}
-                    style={{
-                        position: 'absolute',
-                        left: 10,
 
-                        color: 'white',
-                    }}
-                />
+
+                <TouchableOpacity style={{
+                    position: 'absolute',
+                    left: 1,
+                    top: 10,
+                    paddingLeft: 5, // Add some padding to avoid covering the icon
+                }}>
+                    <Feather
+                        name="menu"
+                        size={30}
+                        style={{
+                            color: 'white',
+                        }}
+                    />
+                </TouchableOpacity>
+
                 <View style={{ width: Dimensions.get('window').width }}>
                     <Text
                         style={{

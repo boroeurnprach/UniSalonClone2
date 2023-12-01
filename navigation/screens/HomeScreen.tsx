@@ -12,7 +12,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
     return (
         <View style={styles.container}>
             <GoogleMap />
@@ -40,7 +40,10 @@ export default function HomeScreen() {
             </View>
             <View style={styles.searchBar}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
+
                     <Icon name="menu" size={30} />
+                    </TouchableOpacity>
                     <TextInput style={styles.searchInput} placeholder="Search Salon..." />
                 </View>
                 <View style={styles.iconsearchLangNotify}>
