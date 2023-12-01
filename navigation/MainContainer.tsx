@@ -23,6 +23,7 @@ import LoginScreen from './LoginScreen';
 import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { withDecay } from 'react-native-reanimated';
+import Profile from './Profile';
 
 // Screen names
 const homeName = "Home";
@@ -171,7 +172,7 @@ function MainTabs() {
 
 function CustomDrawerContent(props) {
   return (
-    <DrawerContentScrollView {...props}>
+    <DrawerContentScrollView {...props} showsVerticalScrollIndicator={false}>
       <View>
         <View style={styles.container}>
           <View style={styles.backgroundContainer}>
@@ -194,7 +195,7 @@ function CustomDrawerContent(props) {
             <Text style={{ marginLeft: 15 }}>Favorite</Text>
           </View>
         </TouchableOpacity>
-        <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', margin: 10 }} />
+        <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c' }} />
 
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
@@ -210,7 +211,7 @@ function CustomDrawerContent(props) {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
-            <FontAwesome name="calendar-check-o" size={20} color="green"/>
+            <FontAwesome name="calendar-check-o" size={20} color="green" />
             <Text style={{ marginLeft: 15 }}>Today Booking & Order</Text>
           </View>
         </TouchableOpacity>
@@ -228,11 +229,11 @@ function CustomDrawerContent(props) {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
-            <Entypo name="credit-card" size={20} color="purple"/>
+            <Entypo name="credit-card" size={20} color="purple" />
             <Text style={{ marginLeft: 15 }}>Payment</Text>
           </View>
         </TouchableOpacity>
-        <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c', margin: 10 }} />
+        <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c' }} />
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Feather name="settings" size={20} />
@@ -251,7 +252,7 @@ function CustomDrawerContent(props) {
             <Text style={{ marginLeft: 15 }}>Help & Feedback</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("LoginScreen")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Entypo name="log-out" size={20} />
             <Text style={{ marginLeft: 15 }}>Sign Out</Text>
@@ -278,7 +279,8 @@ function MainContainer() {
 
       >
         <Drawer.Screen name="MainTabs" component={MainTabs} />
-        <Drawer.Screen name="Profile" component={UserProfileScreen} />
+        <Drawer.Screen name="Login" component={LoginScreen} />
+        <Drawer.Screen name="Profile" component={Profile} />
       </Drawer.Navigator>
 
     </NavigationContainer>
@@ -288,7 +290,7 @@ function MainContainer() {
 function UserProfileScreen() {
   // Replace this with your user profile screen implementation
   return (
-    <View>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>User Profile Screen</Text>
     </View>
   );

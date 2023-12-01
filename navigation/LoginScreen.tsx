@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { useNavigation } from '@react-navigation/native';
 import {
     View,
     Text,
@@ -9,7 +10,7 @@ import {
     Image
 } from 'react-native';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
     const onPressLogin = () => {
         // Do something about the login operation
     };
