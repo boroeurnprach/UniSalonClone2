@@ -27,32 +27,30 @@ const VideoScreen = ({navigation}) => {
             <View
                 style={{
                     width: '100%',
-                    height: 60,
+                    height: 80,
                     backgroundColor: '#16247d',
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
-
-
                 }}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
                 <Feather
-                    onPress={() => {
-                    }}
-                    name="menu"
-                    size={24}
-                    style={{
-                        position: 'absolute',
-                        left: 10,
+                  
+                  name="menu"
+                  size={24}
+                  style={{
 
-                        color: 'white',
-                    }}
-                />
-                <View style={{ width: Dimensions.get('window').width }}>
+                    color: 'white',
+                  }}
+                
+              />
+                </TouchableOpacity>
+                <View style={{ width: '90%'}}>
                     <Text
                         style={{
                             textAlign: 'center', color: 'white', fontSize: 20,
                         }}>
-                        Videos
+                        Profile
                     </Text>
                 </View>
 

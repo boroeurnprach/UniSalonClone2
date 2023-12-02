@@ -24,6 +24,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { withDecay } from 'react-native-reanimated';
 import Profile from './Profile';
+import Favorite from './screens/Favourite';
 
 // Screen names
 const homeName = "Home";
@@ -63,12 +64,12 @@ function MainTabs() {
                 <Entypo
                   name="location"
                   size={20}
-                  color={focused ? '#16247d' : 'grey'}
+                  color={focused ? 'purple' : 'grey'}
                 />
                 <Text
                   style={{
                     fontSize: 10,
-                    color: focused ? '#16247d' : 'grey',
+                    color: focused ? 'purple' : 'grey',
                     marginRight: 0,
                   }}>
                   Home
@@ -88,10 +89,10 @@ function MainTabs() {
                 <Entypo
                   name="shop"
                   size={20}
-                  color={focused ? '#16247d' : 'grey'}
+                  color={focused ? 'purple' : 'grey'}
                 />
                 <Text
-                  style={{ fontSize: 10, color: focused ? '#16247d' : 'grey' }}>
+                  style={{ fontSize: 10, color: focused ? 'purple' : 'grey' }}>
                   Shops
                 </Text>
               </View>
@@ -109,10 +110,10 @@ function MainTabs() {
                 <FontAwesome
                   name="video-camera"
                   size={20}
-                  color={focused ? '#16247d' : 'grey'}
+                  color={focused ? 'purple' : 'grey'}
                 />
                 <Text
-                  style={{ fontSize: 10, color: focused ? '#16247d' : 'grey' }}>
+                  style={{ fontSize: 10, color: focused ? 'purple' : 'grey' }}>
                   Videos
                 </Text>
               </View>
@@ -130,10 +131,10 @@ function MainTabs() {
                 <Ionicons
                   name="person"
                   size={20}
-                  color={focused ? '#16247d' : 'grey'}
+                  color={focused ? 'purple' : 'grey'}
                 />
                 <Text
-                  style={{ fontSize: 10, color: focused ? '#16247d' : 'grey' }}>
+                  style={{ fontSize: 10, color: focused ? 'purple' : 'grey' }}>
                   Professor
                 </Text>
               </View>
@@ -155,10 +156,10 @@ function MainTabs() {
                 <Ionicons
                   name="gift"
                   size={20}
-                  color={focused ? '#16247d' : 'grey'}
+                  color={focused ? 'purple' : 'grey'}
                 />
                 <Text
-                  style={{ fontSize: 10, color: focused ? '#16247d' : 'grey' }}>
+                  style={{ fontSize: 10, color: focused ? 'purple' : 'grey' }}>
                   Promotions
                 </Text>
               </View>
@@ -174,22 +175,23 @@ function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props} showsVerticalScrollIndicator={false}>
       <View>
-        <View style={styles.container}>
-          <View style={styles.backgroundContainer}>
-            <Image source={require('../assets/lambo_car.jpg')} resizeMode='cover' style={styles.backdrop} />
+        <View style={{}}>
+          <View style={{}}>
+            <Image source={require('../assets/lambo_car.jpg')} style={{ height: 200, width: '100%' }} />
           </View>
-          <View style={styles.overlay}>
+          <View style={{}}>
 
-            <Image style={styles.logo} source={require('../assets/boroeurn.jpg')} />
+            <Image source={require('../assets/boroeurn.jpg')} style={{ height: 70, width: 70, borderRadius: 200, marginTop: -130, marginLeft: 20,}}  />
           </View>
+            <Text style={{marginTop: -50, marginBottom: 40, marginLeft: 20, color: 'white'}}>Boroeurn</Text>
         </View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
-          <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
+          <View style={{ padding: 16, flexDirection: 'row', marginRight: 10, }}>
             <Icon name="user-circle-o" size={20} />
             <Text style={{ marginLeft: 15 }}>Profile</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Favorite")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Icon name="heart" size={20} />
             <Text style={{ marginLeft: 15 }}>Favorite</Text>
@@ -224,7 +226,7 @@ function CustomDrawerContent(props) {
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <FontAwesome5 name="history" size={20} />
-            <Text style={{ marginLeft: 15 }}>Hisotry Booking & Order</Text>
+            <Text style={{ marginLeft: 15 }}>History Booking & Order</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
@@ -281,6 +283,7 @@ function MainContainer() {
         <Drawer.Screen name="MainTabs" component={MainTabs} />
         <Drawer.Screen name="Login" component={LoginScreen} />
         <Drawer.Screen name="Profile" component={Profile} />
+        <Drawer.Screen name="Favorite" component={Favorite} />
       </Drawer.Navigator>
 
     </NavigationContainer>
@@ -298,34 +301,34 @@ function UserProfileScreen() {
 
 export default MainContainer;
 
-var styles = StyleSheet.create({
-  backgroundContainer: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  overlay: {
-    opacity: 1,
-  },
-  logo: {
-    width: 160,
-    height: 52,
-    borderRadius: 100,
-  },
-  backdrop: {
-    flex: 1,
-    flexDirection: 'column'
-  },
-  headline: {
-    fontSize: 18,
-    textAlign: 'center',
-    backgroundColor: 'black',
-    color: 'white'
-  }
-});
+// var styles = StyleSheet.create({
+//   backgroundContainer: {
+//     position: 'absolute',
+//     top: 0,
+//     bottom: 0,
+//     left: 0,
+//     right: 0,
+//   },
+//   container: {
+//     flex: 1,
+//     alignItems: 'center',
+//   },
+//   overlay: {
+//     opacity: 1,
+//   },
+//   logo: {
+//     width: 160,
+//     height: 52,
+//     borderRadius: 100,
+//   },
+//   backdrop: {
+//     flex: 1,
+//     flexDirection: 'column'
+//   },
+//   headline: {
+//     fontSize: 18,
+//     textAlign: 'center',
+//     backgroundColor: 'black',
+//     color: 'white'
+//   }
+// });

@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import EvilIcons from 'react-native-vector-icons/Entypo';
 import { Image, Dimensions } from 'react-native';
-import Feather from 'react-native-vector-icons/Feather';
+import Feature from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 
 import Card from '../../Card';
@@ -28,35 +28,30 @@ const ShopScreen = ({ navigation }) => {
                     <Text style={{ textAlign: 'center', color: 'white', fontSize: 20, }}>Shop</Text>
                 </View>
             </View> */}
-            <View
+           <View
                 style={{
                     width: '100%',
-                    height: 60,
+                    height: 80,
                     backgroundColor: '#16247d',
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
-
-
                 }}>
+                <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                <Feature
+                  
+                  name="menu"
+                  size={24}
+                  style={{
+                    
+                    
 
-
-                <TouchableOpacity style={{
-                    position: 'absolute',
-                    left: 1,
-                    top: 10,
-                    paddingLeft: 5, // Add some padding to avoid covering the icon
-                }}>
-                    <Feather
-                        name="menu"
-                        size={30}
-                        style={{
-                            color: 'white',
-                        }}
-                    />
+                    color: 'white',
+                  }}
+                
+              />
                 </TouchableOpacity>
-
-                <View style={{ width: Dimensions.get('window').width }}>
+                <View style={{ width: '90%'}}>
                     <Text
                         style={{
                             textAlign: 'center', color: 'white', fontSize: 20,

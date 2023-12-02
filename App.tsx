@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ShopScreen from './navigation/screens/ShopScreen'
 import HomeScreen from './navigation/screens/HomeScreen'
 import VideoPlayerScreen from './navigation/screens/VideoPlayerScreen'
+import Profile from './navigation/Profile'
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   <NavigationContainer>
@@ -15,7 +16,7 @@ const Navigation = () => {
       <Stack.Screen
         name="VideoPlayer"
         component={VideoPlayer}
-        options={{ headerShown: false }} // Hide the header for VideoPlayer screen
+        options={{ headerShown: false }}
       />
       <Stack.Screen name="ShopScreen" component={ShopScreen} />
       <Stack.Screen name="Home Screen" component={HomeScreen} />

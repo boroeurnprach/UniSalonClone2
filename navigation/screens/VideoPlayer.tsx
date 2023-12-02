@@ -52,7 +52,7 @@ const VideoScreen = ({ navigation }) => {
                         style={{
                             textAlign: 'center', color: 'white', fontSize: 20,
                         }}>
-                        Videos
+                        game
                     </Text>
                 </View>
 

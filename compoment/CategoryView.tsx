@@ -7,7 +7,7 @@ const CategoryView = ({ text, hasIcon, iconName }) => {
             flexDirection: 'row',
             height: 40,
             backgroundColor: 'white',
-            marginTop: 130,
+            marginTop: 110,
             borderRadius: 20,
             justifyContent: 'center',
             alignItems: 'center',
