@@ -31,6 +31,7 @@ import Payment from './screens/Payment';
 import Membership from './screens/Membership';
 import TodayBookingAndOrder from './screens/BookingAndOrder';
 import BookingAndOrder from './screens/BookingAndOrder';
+import VideoPlayerScreen from './screens/VideoPlayerScreen';
 
 // Screen names
 const homeName = "Home";
@@ -41,10 +42,12 @@ const promoName = "Promotions";
 
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
+
 const Stack = createStackNavigator();
 
 function MainTabs() {
   return (
+
     <Tab.Navigator
       screenOptions={{
         tabBarHideOnKeyboard: true,
@@ -272,6 +275,14 @@ function CustomDrawerContent(props) {
   );
 }
 
+function MyStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="VideoPlayerScreen" component={VideoPlayerScreen} />
+      
+    </Stack.Navigator>
+  );
+}
 function MainContainer() {
   const navigationRef = React.useRef();
 
@@ -291,13 +302,13 @@ function MainContainer() {
         <Drawer.Screen name="Profile" component={Profile} />
         <Drawer.Screen name="Favorite" component={Favorite} />
         <Drawer.Screen name="Setting" component={Setting} />
+        <Drawer.Screen name="MyStack" component={MyStack} />
         <Drawer.Screen name="Policy" component={Policy} />
         <Drawer.Screen name="Payment" component={Payment} />
         <Drawer.Screen name="Membership" component={Membership} />
         <Drawer.Screen name="BookingAndOrder" component={BookingAndOrder} />
         <Drawer.Screen name="LoginScreen" component={LoginScreen} />
       </Drawer.Navigator>
-
     </NavigationContainer>
   );
 }

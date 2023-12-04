@@ -103,7 +103,7 @@ import {
               Booking & Order
             </Text>
           </View> 
-          <ScrollView>
+          <ScrollView showsVerticalScrollIndicator={false}>
           {Data.map((e, index) => {
             return (
               <View

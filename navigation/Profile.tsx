@@ -47,7 +47,7 @@ const Profile = ({navigation}) => {
         <Image source={require('../assets/boroeurn.jpg')} style={{ height: 100, width: 100, borderRadius: 200, marginTop: -50 }} />
       </View>
       <View style={{ width: 70, height: 30, backgroundColor: 'green', alignSelf: 'center', marginTop: 20, alignItems: 'center', borderRadius: 10, justifyContent: 'center' }}>
-        <Text style={{ color: 'white' }}>0 Point</Text>
+        <Text style={{ color: 'white' }}>10 Point</Text>
       </View>
       <View style={{ height: 1, backgroundColor: '#003f5c', marginTop: 10 }} />
       <View style={{ marginHorizontal: 10 }}>
