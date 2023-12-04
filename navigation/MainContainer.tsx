@@ -25,6 +25,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { withDecay } from 'react-native-reanimated';
 import Profile from './Profile';
 import Favorite from './screens/Favourite';
+import Setting from './screens/Setting';
+import Policy from './screens/Policy';
+import Payment from './screens/Payment';
+import Membership from './screens/Membership';
+import TodayBookingAndOrder from './screens/BookingAndOrder';
+import BookingAndOrder from './screens/BookingAndOrder';
 
 // Screen names
 const homeName = "Home";
@@ -205,7 +211,7 @@ function CustomDrawerContent(props) {
             <Text style={{ marginLeft: 15 }}>Message</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Membership")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <MaterialIcons name="stars" size={20} />
             <Text style={{ marginLeft: 15 }}>Memebership</Text>
@@ -217,32 +223,32 @@ function CustomDrawerContent(props) {
             <Text style={{ marginLeft: 15 }}>Today Booking & Order</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("BookingAndOrder")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Entypo name="calendar" size={20} />
             <Text style={{ marginLeft: 15 }}>Booking & Order</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("BookingAndOrder")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <FontAwesome5 name="history" size={20} />
             <Text style={{ marginLeft: 15 }}>History Booking & Order</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Payment")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Entypo name="credit-card" size={20} color="purple" />
             <Text style={{ marginLeft: 15 }}>Payment</Text>
           </View>
         </TouchableOpacity>
         <View style={{ flex: 1, height: 1, backgroundColor: '#003f5c' }} />
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Setting")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Feather name="settings" size={20} />
             <Text style={{ marginLeft: 15 }}>Settings</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Policy")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <Entypo name="shield" size={20} />
             <Text style={{ marginLeft: 15 }}>Privacy Policy</Text>
@@ -284,6 +290,12 @@ function MainContainer() {
         <Drawer.Screen name="Login" component={LoginScreen} />
         <Drawer.Screen name="Profile" component={Profile} />
         <Drawer.Screen name="Favorite" component={Favorite} />
+        <Drawer.Screen name="Setting" component={Setting} />
+        <Drawer.Screen name="Policy" component={Policy} />
+        <Drawer.Screen name="Payment" component={Payment} />
+        <Drawer.Screen name="Membership" component={Membership} />
+        <Drawer.Screen name="BookingAndOrder" component={BookingAndOrder} />
+        <Drawer.Screen name="LoginScreen" component={LoginScreen} />
       </Drawer.Navigator>
 
     </NavigationContainer>

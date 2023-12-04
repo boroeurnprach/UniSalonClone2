@@ -15,7 +15,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 export default function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
-            {/* <GoogleMap /> */}
+            <GoogleMap />
             <View style={{ marginTop: 1 }}>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
 
