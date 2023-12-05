@@ -13,7 +13,8 @@ const GoogleMap = () => {
                     longitude: 104.9233301,
                     latitudeDelta: 0.015,
                     longitudeDelta: 0.0121,
-                }}></MapView>
+                }}
+            />
         </View>
     );
 };
@@ -25,9 +26,7 @@ const styles = StyleSheet.create({
         ...StyleSheet.absoluteFillObject,
         justifyContent: 'flex-end',
         alignItems: 'center',
-        width: 500,
-        height: 1000,
-        // flex: 1,
+        flex: 1, // Use flex for responsiveness
     },
     map: {
         ...StyleSheet.absoluteFillObject,

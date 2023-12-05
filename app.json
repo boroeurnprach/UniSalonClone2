@@ -25,9 +25,9 @@
       "package": "com.prachboroeurn.UniSalonClone2",
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyACZpiDyTEWI84nzkccp179MTOZG_BO_rk"
+            "apiKey": "AIzaSyACZpiDyTEWI84nzkccp179MTOZG_BO_rk"
         }
-      },
+    },
       "web": {
         "favicon": "./assets/favicon.png"
       },

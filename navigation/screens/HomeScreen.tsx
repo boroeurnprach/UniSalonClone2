@@ -41,7 +41,6 @@ export default function HomeScreen({ navigation }) {
             <View style={styles.searchBar}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <TouchableOpacity onPress={() => navigation.openDrawer()}>
-
                         <Icon name="menu" size={30} />
                     </TouchableOpacity>
                     <TextInput style={styles.searchInput} placeholder="Search Salon..." />
