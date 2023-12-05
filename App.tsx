@@ -26,8 +26,6 @@ const Navigation = () => {
 
 const App = () => {
   const Stack = createNativeStackNavigator();
-
-
   return (
     // <NavigationContainer>
     //   <Stack.Navigator initialRouteName='VideoPlayer'>
@@ -66,5 +64,4 @@ const App = () => {
 
   )
 }
-
 export default App

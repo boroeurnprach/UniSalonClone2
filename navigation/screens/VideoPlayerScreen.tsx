@@ -1,45 +1,47 @@
 import * as React from 'react';
-import { View, StyleSheet, Button, Dimensions, Text } from 'react-native';
+import { View, StyleSheet, Button, Dimensions, Text, TouchableOpacity } from 'react-native';
 import { Video, ResizeMode } from 'expo-av';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import Feature from 'react-native-vector-icons/Feather';
 
 export default function VideoPlayerScreen({ navigation }) {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (
     <View style={styles.container}>
-      {/* <View
-        style={{
-          width: '100%',
-          height: 80,
-          backgroundColor: '#16247d',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center',
+    <View
+                style={{
+                    width: '100%',
+                    height: 80,
+                    backgroundColor: '#16247d',
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
+                <Feature
+                  
+                  name="arrow-left"
+                  size={24}
+                  style={{
+                    
+                    
 
+                    color: 'white',
+                  }}
+                
+              />
+                </TouchableOpacity>
+                <View style={{ width: '90%'}}>
+                    <Text
+                        style={{
+                            textAlign: 'center', color: 'white', fontSize: 20,
+                        }}>
+                        Videos
+                    </Text>
+                </View>
 
-        }}>
-        <AntDesign
-          onPress={() => navigation.push('VideoPlayer')}
-          name="arrowleft"
-          size={24}
-          style={{
-            position: 'absolute',
-            left: 10,
-
-            color: 'white',
-          }}
-        />
-        <View style={{ width: Dimensions.get('window').width }}>
-          <Text
-            style={{
-              textAlign: 'center', color: 'white', fontSize: 20,
-            }}>
-            Videos
-          </Text>
-        </View>
-
-      </View> */}
+            </View>
       <Video
         ref={video}
         style={styles.video}

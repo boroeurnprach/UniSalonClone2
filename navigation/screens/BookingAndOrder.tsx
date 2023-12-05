@@ -136,6 +136,7 @@ import {
                             color: 'white',
                             textAlign: 'center',
                             fontWeight: 'bold',
+                            fontSize: 13,
                           }}>
                           Booking
                         </Text>

@@ -33,7 +33,7 @@ const VideoScreen = ({ navigation }) => {
         </TouchableOpacity>
         <View style={{ width: '90%' }}>
           <Text style={{ textAlign: 'center', color: 'white', fontSize: 20 }}>
-            Profile
+            Videos
           </Text>
         </View>
       </View>
@@ -55,11 +55,92 @@ const VideoScreen = ({ navigation }) => {
         <View style={{ flexDirection: 'row', marginTop: 10, justifyContent: 'center' }}>
           <View style={{ flex: 1, height: 1, backgroundColor: 'grey' }} />
         </View>
-        <View style={{ marginBottom: 150 }}>
+        <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/bird.jpeg')}
             description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/bird.jpeg')}
+            description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon2.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
+            date="17 Dec 2021 at 11:59 AM"
+            onPress={() => navigation.navigate('VideoPlayerScreen')}
+          />
+        </View>
+        <View style={{marginVertical: 2}}>
+          {/* Updated onPress prop */}
+          <Card3
+            image={require('../../assets/salon4.jpeg')}
+            description="ការកក់សក់ឲ្យអតិថិជន"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />

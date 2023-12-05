@@ -308,7 +308,9 @@ function MainContainer() {
         <Drawer.Screen name="Membership" component={Membership} />
         <Drawer.Screen name="BookingAndOrder" component={BookingAndOrder} />
         <Drawer.Screen name="LoginScreen" component={LoginScreen} />
+        <Drawer.Screen name="VideoPlayerScreen" component={VideoPlayerScreen} />
       </Drawer.Navigator>
+     
     </NavigationContainer>
   );
 }
