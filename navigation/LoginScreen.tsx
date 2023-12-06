@@ -206,9 +206,9 @@ import {
     Image
 } from 'react-native';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
     const onPressLogin = () => {
-        // Do something about the login operation
+        navigation.navigate("MainTabs")
     };
 
     const onPressForgotPassword = () => {

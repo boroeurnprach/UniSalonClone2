@@ -9,6 +9,8 @@ import ShopScreen from './navigation/screens/ShopScreen'
 import HomeScreen from './navigation/screens/HomeScreen'
 import VideoPlayerScreen from './navigation/screens/VideoPlayerScreen'
 import Profile from './navigation/Profile'
+import ShopInformation from './navigation/screens/ShopInformation'
+import OrderScreen from './navigation/screens/OrderScreen'
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   <NavigationContainer>
@@ -27,40 +29,8 @@ const Navigation = () => {
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName='VideoPlayer'>
-    //     <Stack.Screen
-    //       name="VideoPlayer"
-    //       component={VideoPlayer}
-    //       options={{ headerShown: false }}
-    //     />
-
-    //     <Stack.Screen
-    //       name="ShopScreen"
-    //       component={ShopScreen}
-    //       options={{ headerShown: false }}
-    //     />
-
-    //     <Stack.Screen
-    //       name="HomeScreen"
-    //       component={HomeScreen}
-    //       options={{ headerShown: true }}
-    //     />
-    //     <Stack.Screen
-    //       name="Videos"
-    //       component={VideoPlayerScreen}
-    //       options={{ headerShown: true,
-    //         headerTitleAlign: 'center',
-
-    //         headerStyle: {
-    //           backgroundColor: '#16247d', // Set the app bar color to blue
-    //         },
-    //         headerTintColor: 'white',
-    //        }}
-    //     />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
-    <MainContainer />
+   
+    <MainContainer/>
 
   )
 }

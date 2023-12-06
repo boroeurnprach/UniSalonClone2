@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, TextInput, ScrollView, Pressable } from 'react-native'
 import React, { Component } from 'react'
 import Entypo from 'react-native-vector-icons/Entypo';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -105,7 +105,11 @@ const ShopScreen = ({ navigation }) => {
 
                     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <TouchableOpacity onPress={()=> navigation.navigate("ShopInformation")}>
+
                             <Card imageSource={require('../../assets/lambo_car.jpg')} location="None" customerCount={27} userName="មែន ស្ដាយ" />
+                            </TouchableOpacity>
+                            
                             <Card imageSource={require('../../assets/bird.jpeg')} location="Phnom Penh" customerCount={90} userName="បូរឿន" />
                             <Card imageSource={require('../../assets/barber.png')} location="Banan" customerCount={27} userName="មុីៗ កាត់សក់" />
                             <Card imageSource={require('../../assets/bird.jpeg')} location="None" customerCount={27} userName="មែន ស្ដាយ" />
