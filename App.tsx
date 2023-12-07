@@ -11,6 +11,7 @@ import VideoPlayerScreen from './navigation/screens/VideoPlayerScreen'
 import Profile from './navigation/Profile'
 import ShopInformation from './navigation/screens/ShopInformation'
 import OrderScreen from './navigation/screens/OrderScreen'
+import ForgotPasswordView from './navigation/screens/ForgotPasswordScreen'
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   <NavigationContainer>
