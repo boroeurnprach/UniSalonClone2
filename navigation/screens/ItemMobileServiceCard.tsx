@@ -42,7 +42,7 @@ const ItemMobileServiceCard = ({ image, cash, amount, title }) => {
                 borderRadius: 50,
                 borderWidth: 1,
                 borderColor: 'lightgrey',
-                backgroundColor: isPressed ? 'lightgrey' : 'white',
+                backgroundColor: isPressed ? 'grey' : 'white',
                 margin: 5,
               }}
             ></View>

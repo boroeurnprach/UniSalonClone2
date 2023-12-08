@@ -4,7 +4,7 @@ import React from 'react'
 const ForgotPasswordScreen = () => {
   return (
     <View>
-      <Text>ForgotPasswordScreen</Text>
+      <Text>You are my angel...</Text>
     </View>
   )
 }

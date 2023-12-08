@@ -12,6 +12,7 @@ import Profile from './navigation/Profile'
 import ShopInformation from './navigation/screens/ShopInformation'
 import OrderScreen from './navigation/screens/OrderScreen'
 import ForgotPasswordView from './navigation/screens/ForgotPasswordScreen'
+import ServiceCard from './compoment/ServiceCard'
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   <NavigationContainer>
@@ -26,13 +27,11 @@ const Navigation = () => {
     </Stack.Navigator>
   </NavigationContainer>
 }
-
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
    
     <MainContainer/>
-
   )
 }
 export default App

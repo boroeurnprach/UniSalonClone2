@@ -34,6 +34,7 @@ import BookingAndOrder from './screens/BookingAndOrder';
 import VideoPlayerScreen from './screens/VideoPlayerScreen';
 import ShopInformation from './screens/ShopInformation';
 import OrderScreen from './screens/OrderScreen';
+import OrderDetail from './screens/OrderDetail';
 
 // Screen names
 const homeName = "Home";
@@ -314,6 +315,7 @@ function MainContainer() {
         <Drawer.Screen name="VideoPlayerScreen" component={VideoPlayerScreen} />
         <Drawer.Screen name="ShopInformation" component={ShopInformation} />
         <Drawer.Screen name="OrderScreen" component={OrderScreen} />
+        <Drawer.Screen name="OrderDetail" component={OrderDetail} />
         
       </Drawer.Navigator>
     </NavigationContainer>

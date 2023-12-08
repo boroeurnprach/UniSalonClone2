@@ -213,44 +213,48 @@ import { useNavigation } from '@react-navigation/native';
 const OrderScreen = ({navigation}) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#f2f2f2' }}>
-      <View
-        style={{
-          width: '100%',
-          height: 80,
-          backgroundColor: '#16247d',
-          flexDirection: 'row',
-          alignItems: 'center',
-        }}>
-        <TouchableOpacity
-          activeOpacity={1}
-          onPress={() => {
-           navigation.navigate("ShopInformation")
-          }}>
-          <AntDesign
-            name="arrowleft"
-            size={25}
-            style={{
-              color: 'white',
-              paddingLeft: '1%',
-            }}
-          />
-        </TouchableOpacity>
-        <Text
-          style={{
-            fontWeight: 'bold',
-            fontSize: 17,
-            color: 'white',
-            textAlign: 'center',
-            paddingLeft: '15%',
-          }}>
-          Choose Mobile Service
-        </Text>
-      </View>
+     <View
+  style={{
+    width: '100%',
+    height: 80,
+    backgroundColor: '#16247d',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }}>
+  <TouchableOpacity
+    activeOpacity={1}
+    onPress={() => {
+      navigation.navigate("ShopInformation")
+    }}
+    style={{
+      position: 'absolute',
+      left: 16,
+      alignItems: 'center',
+    }}>
+    <AntDesign
+      name="arrowleft"
+      size={25}
+      style={{
+        color: 'white',
+      }}
+    />
+  </TouchableOpacity>
+  <Text
+    style={{
+      fontWeight: 'bold',
+      fontSize: 17,
+      color: 'white',
+      textAlign: 'center',
+    }}>
+    Choose Mobile Service
+  </Text>
+</View>
       <View>
         <Text style={{ paddingVertical: 15, fontWeight: 'bold', marginHorizontal: 10 }}>Select Service</Text>
 
         <View style={{ width: '100%', height: 1, backgroundColor: 'black' }}></View>
-        <View style={{ flexDirection: 'row', marginBottom: 20 }}>
+        <View style={{ flexDirection: 'row', marginBottom: 20 , justifyContent:'space-between'}}>
           <ItemMobileServiceCard cash={'10.00$'} amount={'2pt'} title={'Nail'} image={require('../../assets/nail-polish.png')} />
           <ItemMobileServiceCard cash={'10.00$'} amount={'2pt'} title={'Make-up for Wedding'} image={require('../../assets/makeup.png')} />
           <ItemMobileServiceCard cash={'30.00$'} amount={'2pt'} title={'Haircut for Men'} image={require('../../assets/cut.png')} />
@@ -263,7 +267,7 @@ const OrderScreen = ({navigation}) => {
           color="#16297d"
           accessibilityLabel="Learn more about this purple button"
           onPress={() => {
-            navigation.navigate("")
+            navigation.navigate("OrderDetail")
           }}
          
         />
