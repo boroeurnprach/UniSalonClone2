@@ -8,7 +8,7 @@ const LoadingAnimation = () => {
   useEffect(() => {
     console.log('Start push screen');
     setTimeout(() => {
-      console.log('Hello, World!');
+      console.log('Screen Pushed');
       navigation.reset({
         index: 0,
         routes: [{ name: 'MainTabs' }],
