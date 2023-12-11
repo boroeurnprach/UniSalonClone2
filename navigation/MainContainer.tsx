@@ -35,6 +35,9 @@ import VideoPlayerScreen from './screens/VideoPlayerScreen';
 import ShopInformation from './screens/ShopInformation';
 import OrderScreen from './screens/OrderScreen';
 import OrderDetail from './screens/OrderDetail';
+import ProfessionalDetail from './screens/ProfessionalDetail';
+import LoadingView from './screens/LoadingAnimation';
+import LoadingAnimation from './screens/LoadingAnimation';
 
 // Screen names
 const homeName = "Home";
@@ -193,9 +196,9 @@ function CustomDrawerContent(props) {
           </View>
           <View style={{}}>
 
-            <Image source={require('../assets/boroeurn.jpg')} style={{ height: 70, width: 70, borderRadius: 200, marginTop: -130, marginLeft: 20,}}  />
+            <Image source={require('../assets/boroeurn.jpg')} style={{ height: 70, width: 70, borderRadius: 200, marginTop: -130, marginLeft: 20, }} />
           </View>
-            <Text style={{marginTop: -50, marginBottom: 40, marginLeft: 20, color: 'white'}}>Boroeurn</Text>
+          <Text style={{ marginTop: -50, marginBottom: 40, marginLeft: 20, color: 'white' }}>Boroeurn</Text>
         </View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10, }}>
@@ -283,7 +286,7 @@ function MyStack() {
     <Stack.Navigator>
       <Stack.Screen name="VideoPlayerScreen" component={VideoPlayerScreen} />
       <Stack.Screen name="OrderScreen" component={OrderScreen} />
-      
+
     </Stack.Navigator>
   );
 }
@@ -301,6 +304,7 @@ function MainContainer() {
 
 
       >
+        <Drawer.Screen name="LoadingAnimation" component={LoadingAnimation} />
         <Drawer.Screen name="MainTabs" component={MainTabs} />
         <Drawer.Screen name="Login" component={LoginScreen} />
         <Drawer.Screen name="Profile" component={Profile} />
@@ -316,7 +320,8 @@ function MainContainer() {
         <Drawer.Screen name="ShopInformation" component={ShopInformation} />
         <Drawer.Screen name="OrderScreen" component={OrderScreen} />
         <Drawer.Screen name="OrderDetail" component={OrderDetail} />
-        
+        <Drawer.Screen name="ProfessionalDetail" component={ProfessionalDetail} />
+
       </Drawer.Navigator>
     </NavigationContainer>
   );

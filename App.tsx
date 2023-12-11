@@ -7,12 +7,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ShopScreen from './navigation/screens/ShopScreen'
 import HomeScreen from './navigation/screens/HomeScreen'
+import AntDesign from 'react-native-vector-icons/AntDesign'
 import VideoPlayerScreen from './navigation/screens/VideoPlayerScreen'
 import Profile from './navigation/Profile'
 import ShopInformation from './navigation/screens/ShopInformation'
 import OrderScreen from './navigation/screens/OrderScreen'
 import ForgotPasswordView from './navigation/screens/ForgotPasswordScreen'
 import ServiceCard from './compoment/ServiceCard'
+import ProfessionalDetail from './navigation/screens/ProfessionalDetail'
+import LoadingAnimation from './navigation/screens/LoadingAnimation'
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   <NavigationContainer>
@@ -30,8 +33,8 @@ const Navigation = () => {
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
-   
-    <MainContainer/>
+
+    <MainContainer />
   )
 }
 export default App

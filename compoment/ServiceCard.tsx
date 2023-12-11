@@ -12,7 +12,7 @@ const ServiceCard = () => {
         <Image source={(require('../assets/nail-polish.png'))} style={{width: 40, height: 40}}/>
     </View>
     <View style={{marginLeft: 5}}>
-        <Text style={{color: '#16297d'}}>
+        <Text style={{color: '#16297d', fontWeight: 'bold'}}>
             Nail
         </Text>
         <Text style={{fontSize: 10}}>
