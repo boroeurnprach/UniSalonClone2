@@ -20,7 +20,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import ProfessorCard from '../../compoment/ProfessorCard';
 import MobileServiceCard from '../../compoment/MobileServiceCard';
 
-
+const fontTitle = 14;
 const ShopInformation = ({ navigation }) => {
   // const navigation: any = useNavigation();
   // const [text, onChangeText] = React.useState('');
@@ -33,7 +33,7 @@ const ShopInformation = ({ navigation }) => {
 
 
             width: '100%',
-            height: 80,
+            height: 60,
             backgroundColor: '#16247d',
             flexDirection: 'row',
             alignItems: 'center',
@@ -44,11 +44,11 @@ const ShopInformation = ({ navigation }) => {
           <TouchableOpacity
             activeOpacity={1}
             onPress={() => {
-              navigation.goBack();
+              navigation.navigate("MainTabs");
             }}>
             <AntDesign
               name="arrowleft"
-              size={25}
+              size={20}
               style={{
                 color: 'white',
               }}
@@ -57,7 +57,7 @@ const ShopInformation = ({ navigation }) => {
           <Text
             style={{
               fontWeight: 'bold',
-              fontSize: 17,
+              fontSize: fontTitle,
               color: 'white',
               textAlign: 'center',
             }}>
@@ -65,7 +65,7 @@ const ShopInformation = ({ navigation }) => {
           </Text>
           <AntDesign
             name="hearto"
-            size={25}
+            size={20}
             style={{
               color: 'white',
             }}

@@ -33,11 +33,12 @@ import TodayBookingAndOrder from './screens/BookingAndOrder';
 import BookingAndOrder from './screens/BookingAndOrder';
 import VideoPlayerScreen from './screens/VideoPlayerScreen';
 import ShopInformation from './screens/ShopInformation';
-import OrderScreen from './screens/OrderScreen';
+import OrderScreen from './screens/ChooseMobileService';
 import OrderDetail from './screens/OrderDetail';
 import ProfessionalDetail from './screens/ProfessionalDetail';
 import LoadingView from './screens/LoadingAnimation';
 import LoadingAnimation from './screens/LoadingAnimation';
+import FeedBackScreen from './screens/FeedBackScreen';
 
 // Screen names
 const homeName = "Home";
@@ -263,7 +264,7 @@ function CustomDrawerContent(props) {
             <Text style={{ marginLeft: 15 }}>Privacy Policy</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("FeedBackScreen")}>
           <View style={{ padding: 16, flexDirection: 'row', marginRight: 10 }}>
             <AntDesign name="questioncircle" size={20} />
             <Text style={{ marginLeft: 15 }}>Help & Feedback</Text>
@@ -321,6 +322,9 @@ function MainContainer() {
         <Drawer.Screen name="OrderScreen" component={OrderScreen} />
         <Drawer.Screen name="OrderDetail" component={OrderDetail} />
         <Drawer.Screen name="ProfessionalDetail" component={ProfessionalDetail} />
+        <Drawer.Screen name="FeedBackScreen" component={FeedBackScreen} />
+        <Drawer.Screen name="VideoScreen" component={VideoScreen} />
+        <Drawer.Screen name="Promotion" component={Promotion} />
 
       </Drawer.Navigator>
     </NavigationContainer>
@@ -337,35 +341,3 @@ function UserProfileScreen() {
 }
 
 export default MainContainer;
-
-// var styles = StyleSheet.create({
-//   backgroundContainer: {
-//     position: 'absolute',
-//     top: 0,
-//     bottom: 0,
-//     left: 0,
-//     right: 0,
-//   },
-//   container: {
-//     flex: 1,
-//     alignItems: 'center',
-//   },
-//   overlay: {
-//     opacity: 1,
-//   },
-//   logo: {
-//     width: 160,
-//     height: 52,
-//     borderRadius: 100,
-//   },
-//   backdrop: {
-//     flex: 1,
-//     flexDirection: 'column'
-//   },
-//   headline: {
-//     fontSize: 18,
-//     textAlign: 'center',
-//     backgroundColor: 'black',
-//     color: 'white'
-//   }
-// });

@@ -193,6 +193,7 @@ const renderScene = SceneMap({
 });
 
 const { width } = Dimensions.get('window');
+const fontTitle = 14;
 
 const Favorite = () => {
   const navigation: any = useNavigation();
@@ -231,34 +232,36 @@ const Favorite = () => {
       <View
         style={{
           width: '100%',
-          height: 80,
+          height: 60,
           backgroundColor: '#16247d',
           flexDirection: 'row',
           alignItems: 'center',
+          justifyContent: 'center',
         }}>
-        <TouchableOpacity
-          activeOpacity={1}
+        <AntDesign
           onPress={() => {
             navigation.navigate("MainTabs");
-          }}>
-          <AntDesign
-            name="arrowleft"
-            size={25}
-            style={{
-              color: 'white',
-              paddingLeft: '5%',
-            }}
-          />
-        </TouchableOpacity>
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
         <Text
           style={{
             fontWeight: 'bold',
-            fontSize: 17,
-            color: 'white',
-            textAlign: 'center',
-            paddingLeft: '30%',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
           }}>
-          Favourite
+         Favourite
         </Text>
       </View>
       <View style={{ width: '100%', height: '100%' }}>

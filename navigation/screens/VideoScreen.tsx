@@ -15,27 +15,44 @@ import VideoPlayerScreen from './VideoPlayerScreen';
 import Card3 from '../../Card3';
 
 const Stack = createStackNavigator();
-
+const fontTitle = 14;
 const VideoScreen = ({ navigation }) => {
   return (
     <View>
-      <View
+     <View
         style={{
           width: '100%',
-          height: 80,
+          height: 60,
           backgroundColor: '#16247d',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <TouchableOpacity onPress={() => navigation.openDrawer()}>
-          <Feather name="menu" size={24} style={{ color: 'white' }} />
-        </TouchableOpacity>
-        <View style={{ width: '90%' }}>
-          <Text style={{ textAlign: 'center', color: 'white', fontSize: 20 }}>
-            Videos
-          </Text>
-        </View>
+        <Feather
+          onPress={() => {
+            navigation.openDrawer();
+          }}
+          name="menu"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
+        <Text
+          style={{
+            fontWeight: 'bold',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
+          }}>
+          Videos
+        </Text>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View>
@@ -58,7 +75,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
-            image={require('../../assets/bird.jpeg')}
+            image={require('../../assets/barber1.jpeg')}
             description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}
@@ -67,7 +84,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
-            image={require('../../assets/bird.jpeg')}
+            image={require('../../assets/salon6.jpeg')}
             description="ទំនុកចិត្ដជាមួយយើងខ្ញុំ"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}
@@ -85,7 +102,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
-            image={require('../../assets/salon4.jpeg')}
+            image={require('../../assets/salon2.jpeg')}
             description="ការកក់សក់ឲ្យអតិថិជន"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}
@@ -94,7 +111,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
-            image={require('../../assets/salon4.jpeg')}
+            image={require('../../assets/salon3.jpeg')}
             description="ការកក់សក់ឲ្យអតិថិជន"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}
@@ -103,7 +120,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{marginVertical: 2}}>
           {/* Updated onPress prop */}
           <Card3
-            image={require('../../assets/salon4.jpeg')}
+            image={require('../../assets/salon5.jpeg')}
             description="ការកក់សក់ឲ្យអតិថិជន"
             date="17 Dec 2021 at 11:59 AM"
             onPress={() => navigation.navigate('VideoPlayerScreen')}

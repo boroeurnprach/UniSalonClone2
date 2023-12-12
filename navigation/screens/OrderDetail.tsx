@@ -1,7 +1,9 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import ServiceCard from '../../compoment/ServiceCard'
+
+const fontTitle = 14;
 
 const OrderDetail = ({ navigation }) => {
   return (
@@ -9,42 +11,39 @@ const OrderDetail = ({ navigation }) => {
       <View
         style={{
           width: '100%',
-          height: 80,
+          height: 60,
           backgroundColor: '#16247d',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <TouchableOpacity
-          activeOpacity={1}
+        <AntDesign
           onPress={() => {
-            navigation.navigate("ShopInformation")
+            navigation.navigate("ShopInformation");
           }}
+          name="arrowleft"
+          size={20}
           style={{
+            color: 'white',
             position: 'absolute',
-            left: 16,
-            alignItems: 'center',
-          }}>
-          <AntDesign
-            name="arrowleft"
-            size={25}
-            style={{
-              color: 'white',
-            }}
-          />
-        </TouchableOpacity>
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
         <Text
           style={{
             fontWeight: 'bold',
-            fontSize: 17,
-            color: 'white',
-            textAlign: 'center',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
           }}>
-          Order Detail
+          Order Details
         </Text>
       </View>
-
-      <View style={{ marginHorizontal: 5 }}>
+        <View style={{ marginHorizontal: 5 }}>
         <Text style={{ color: '#16297d', fontWeight: 'bold' }}>Shop Information</Text>
         <View style={{ flexDirection: 'row', marginHorizontal: 20 }}>
           <View style={{ alignItems: 'flex-end', }}>
@@ -138,8 +137,6 @@ const OrderDetail = ({ navigation }) => {
         </View>
 
       </View>
-
-
     </View>
   )
 }

@@ -9,44 +9,46 @@ import {
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
-
+const fontTitle = 14;
 const Privacy = () => {
   const navigation: any = useNavigation();
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
 
-      <View
+<View
         style={{
           width: '100%',
-          height: 80,
+          height: 60,
           backgroundColor: '#16247d',
           flexDirection: 'row',
           alignItems: 'center',
+          justifyContent: 'center',
         }}>
-        <TouchableOpacity
-          activeOpacity={1}
+        <AntDesign
           onPress={() => {
             navigation.navigate("MainTabs");
-          }}>
-          <AntDesign
-            name="arrowleft"
-            size={25}
-            style={{
-              color: 'white',
-              paddingLeft: '5%',
-            }}
-          />
-        </TouchableOpacity>
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
         <Text
           style={{
             fontWeight: 'bold',
-            fontSize: 17,
-            color: 'white',
-            textAlign: 'center',
-            paddingLeft: '26%',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
           }}>
-          Privacy Policy
+         Privacy Policy
         </Text>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>

@@ -13,7 +13,8 @@ import Feather from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
-
+const fontTitle = 14;
+const iconSize = 20;
 const { width, height } = Dimensions.get('window');
 const SideBarFilter = [
     {
@@ -77,37 +78,37 @@ const PersonData = [
     {
         id: 2,
         name: 'Justin Bieber',
-        img: require('../assets/cat.jpg'),
+        img: require('../assets/justin.jpeg'),
     },
     {
         id: 3,
         name: 'Zayn',
-        img: require('../assets/cat.jpg'),
+        img: require('../assets/user2.png'),
     },
     {
         id: 4,
         name: 'Selena Gomez',
-        img: require('../assets/cat.jpg'),
+        img: require('../assets/user4.png'),
     },
     {
         id: 5,
-        name: 'Charlie Puth',
-        img: require('../assets/cat.jpg'),
+        name: 'Rot Reaksa',
+        img: require('../assets/human.png'),
     },
     {
         id: 6,
         name: 'Jack Ma',
-        img: require('../assets/cat.jpg'),
+        img: require('../assets/user.png'),
     },
     {
         id: 7,
-        name: 'Donald Trump',
-        img: require('../assets/cat.jpg'),
+        name: 'Anna',
+        img: require('../assets/woman.png'),
     },
     {
         id: 8,
         name: 'William Evan',
-        img: require('../assets/cat.jpg'),
+        img: require('../assets/justin.jpeg'),
     },
     {
         id: 9,
@@ -279,24 +280,24 @@ const Professor = () => {
                         navigation.openDrawer();
                     }}
                     name="menu"
-                    size={24}
+                    size={iconSize}
                     style={{
                         color: 'white',
-                        paddingLeft: '5%',
+                        left: 10
                     }}
                 />
                 <Text
                     style={{
-                        fontSize: 17,
+                        fontSize: fontTitle,
                         color: 'white',
                         fontWeight: 'bold', textAlign: 'center',
-                        paddingLeft: '25%',
+                        paddingLeft: '30%',
                     }}>
                     All Professors
                 </Text>
                 <Feather
                     name="search"
-                    size={24}
+                    size={iconSize}
                     style={{
                         color: 'white',
                         marginLeft: '25%',

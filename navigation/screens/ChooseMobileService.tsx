@@ -209,47 +209,46 @@ import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import ItemMobileServiceCard from './ItemMobileServiceCard';
 import { useNavigation } from '@react-navigation/native';
+const fontTitle = 14;
 
 const OrderScreen = ({navigation}) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#f2f2f2' }}>
-     <View
-  style={{
-    width: '100%',
-    height: 80,
-    backgroundColor: '#16247d',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }}>
-  <TouchableOpacity
-    activeOpacity={1}
-    onPress={() => {
-      navigation.navigate("ShopInformation")
-    }}
-    style={{
-      position: 'absolute',
-      left: 16,
-      alignItems: 'center',
-    }}>
-    <AntDesign
-      name="arrowleft"
-      size={25}
-      style={{
-        color: 'white',
-      }}
-    />
-  </TouchableOpacity>
-  <Text
-    style={{
-      fontWeight: 'bold',
-      fontSize: 17,
-      color: 'white',
-      textAlign: 'center',
-    }}>
-    Choose Mobile Service
-  </Text>
-</View>
+   <View
+        style={{
+          width: '100%',
+          height: 60,
+          backgroundColor: '#16247d',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <AntDesign
+          onPress={() => {
+            navigation.navigate("ShopInformation");
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
+        <Text
+          style={{
+            fontWeight: 'bold',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
+          }}>
+          Choose Mobile Service
+        </Text>
+      </View>
       <View>
         <Text style={{ paddingVertical: 15, fontWeight: 'bold', marginHorizontal: 10 }}>Select Service</Text>
 

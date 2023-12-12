@@ -1,7 +1,7 @@
 import React from 'react';
 import MapView from 'react-native-maps';
 import BottomSheet from '@gorhom/bottom-sheet';
-import { StyleSheet, View, TextInput, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, TextInput, Text, ScrollView, StatusBar} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -15,6 +15,11 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 export default function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
+            <StatusBar
+        animated={true}
+        backgroundColor="#16247d"
+    
+      />
             <GoogleMap />
             <View style={{ marginTop: 1 }}>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -63,7 +68,6 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#16247d',
 
     },
 
@@ -74,7 +78,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#ccc',
         position: 'absolute',
-        top: 40,
+        top: 20,
         left: 10,
         right: 10,
         backgroundColor: 'white',

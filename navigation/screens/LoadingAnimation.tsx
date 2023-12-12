@@ -17,7 +17,7 @@ const LoadingAnimation = () => {
   });
   return (
     <View style={styles.container}>
-      <Grid color="white" size={60} />
+      <Grid color="white" size={40} />
       <View style={{ height: 30 }}></View>
       <Text style={styles.txtStyle}>Loading...</Text>
     </View>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#16247d',
   },
   txtStyle: {
-    fontSize: 18,
+    fontSize: 14,
     color: 'white',
     fontWeight: 'bold',
   },

@@ -5,43 +5,46 @@ import Icon from 'react-native-vector-icons/AntDesign'
 import Feature from 'react-native-vector-icons/Feather'
 import { useNavigation } from '@react-navigation/native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-
+import AntDesign from 'react-native-vector-icons/AntDesign'
+const fontTitle = 14;
 const Profile = ({navigation}) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View
-                style={{
-                    width: '100%',
-                    height: 60,
-                    backgroundColor: '#16247d',
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}>
-                <TouchableOpacity onPress={() => navigation.navigate("MainTabs")}>
-                <Feature
-                  
-                  name="arrow-left"
-                  size={24}
-                  style={{
-                    
-                    
-
-                    color: 'white',
-                  }}
-                
-              />
-                </TouchableOpacity>
-                <View style={{ width: '90%'}}>
-                    <Text
-                        style={{
-                            textAlign: 'center', color: 'white', fontSize: 20,
-                        }}>
-                        Profile
-                    </Text>
-                </View>
-
-            </View>
+        style={{
+          width: '100%',
+          height: 60,
+          backgroundColor: '#16247d',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <AntDesign
+          onPress={() => {
+            navigation.navigate("MainTabs");
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
+        <Text
+          style={{
+            fontWeight: 'bold',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
+          }}>
+         Profile
+        </Text>
+      </View>
       <View style={{ alignItems: 'center' }}>
         <Image source={require('../assets/lambo_car.jpg')} style={{ height: 200, width: '100%' }} />
         <Image source={require('../assets/boroeurn.jpg')} style={{ height: 100, width: 100, borderRadius: 200, marginTop: -50 }} />

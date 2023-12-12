@@ -30,7 +30,7 @@ const Promotion = () => {
         activeOpacity={1}
         style={{ width: 'auto', height: '94%' }}
         onPress={() => {
-          navigation.push('DetailPromotion');
+          // navigation.push('DetailPromotion');
         }}>
         <View style={styles.CardPromotion}>
           <View
@@ -168,10 +168,11 @@ export const PromotionScreen = () => {
       <View
         style={{
           width: '100%',
-          height: 80,
+          height: 60,
           backgroundColor: '#16247d',
           flexDirection: 'row',
           alignItems: 'center',
+          justifyContent: 'center',
         }}>
         <Feather
           onPress={() => {
@@ -181,15 +182,19 @@ export const PromotionScreen = () => {
           size={22}
           style={{
             color: 'white',
-            paddingLeft: '5%',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
           }}
         />
         <Text
           style={{
-            fontSize: 17,
-            color: 'white',
             fontWeight: 'bold',
-            paddingLeft: '28%',
+    fontSize: 14,
+    color: 'white',
+    textAlign: 'center',
           }}>
           Promotions
         </Text>

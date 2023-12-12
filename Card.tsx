@@ -5,7 +5,7 @@ import { View, Text, Image } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 const Card = ({ imageSource, location, customerCount, userName }) => {
   return (
-    <View style={{ backgroundColor: 'white', height: 160, width: 160, borderRadius: 2, margin: 10, elevation: 3, }}>
+    <View style={{ backgroundColor: 'white', height: 160, width: 160, borderRadius: 2, marginHorizontal: 3, elevation: 3, }}>
       <Image style={{ width: '100%', height: '40%', borderRadius: 2 }} source={imageSource} />
       <View style={{ margin: 10 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>

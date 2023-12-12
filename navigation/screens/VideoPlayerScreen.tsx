@@ -189,46 +189,49 @@ import * as React from 'react';
 import { View, StyleSheet, Button, Dimensions, Text, TouchableOpacity, Image } from 'react-native';
 import { Video, ResizeMode } from 'expo-av';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import Feature from 'react-native-vector-icons/Feather';
+import Feather from 'react-native-vector-icons/Feather';
 
+const fontTitle = 14;
 export default function VideoPlayerScreen({ navigation }) {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (
     <View style={styles.container}>
-    <View
-                style={{
-                    width: '100%',
-                    height: 80,
-                    backgroundColor: '#16247d',
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}>
-                <TouchableOpacity onPress={() => navigation.goBack()}>
-                <Feature
-                  
-                  name="arrow-left"
-                  size={24}
-                  style={{
-                    
-                    
-
-                    color: 'white',
-                  }}
-                
-              />
-                </TouchableOpacity>
-                <View style={{ width: '90%'}}>
-                    <Text
-                        style={{
-                            textAlign: 'center', color: 'white', fontSize: 20,
-                        }}>
-                        Videos
-                    </Text>
-                </View>
-
-            </View>
+  <View
+        style={{
+          width: '100%',
+          height: 60,
+          backgroundColor: '#16247d',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <AntDesign
+          onPress={() => {
+            navigation.navigate("MainTabs");
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'white',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
+        <Text
+          style={{
+            fontWeight: 'bold',
+    fontSize: fontTitle,
+    color: 'white',
+    textAlign: 'center',
+    
+          }}>
+          Videos
+        </Text>
+      </View>
       <Video
         ref={video}
         style={styles.video}
@@ -362,7 +365,6 @@ export default function VideoPlayerScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ecf0f1',
   },
   video: {
     alignSelf: 'center',
