@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "UniSalonClone2",
-    "slug": "UniSalonClone2",
+    "name": "UniSalon",
+    "slug": "UniSalon",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/user.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/s.png",
@@ -19,27 +19,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/user.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.prachboroeurn.UniSalonClone2",
       "config": {
         "googleMaps": {
-            "apiKey": "AIzaSyACZpiDyTEWI84nzkccp179MTOZG_BO_rk"
+          "apiKey": "AIzaSyACZpiDyTEWI84nzkccp179MTOZG_BO_rk"
         }
-    },
+      },
       "web": {
         "favicon": "./assets/favicon.png"
-      },
-      "extra": {
-        "eas": {
-          "projectId": "9a3f45c1-f1f0-44ed-bf03-4641b36c0b21"
-        }
       }
     },
     "extra": {
       "eas": {
-        "projectId": "9a3f45c1-f1f0-44ed-bf03-4641b36c0b21"
+        "projectId": "d30de46b-6e1d-47d6-86a8-02983e99864a"
       }
     }
   }

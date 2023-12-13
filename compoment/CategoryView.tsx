@@ -1,24 +1,27 @@
 import { View, Text } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import Icon from 'react-native-vector-icons/Fontisto'
 const CategoryView = ({ text, hasIcon, iconName }) => {
     return (
-        <View style={{
-            width: 130,
+        <TouchableOpacity style={{
+            width: 'auto',
             flexDirection: 'row',
             height: 40,
             backgroundColor: 'white',
-            marginTop: 90,
+            paddingVertical:5,
             borderRadius: 20,
             justifyContent: 'center',
             alignItems: 'center',
-            marginRight: 10
+           marginLeft: 5,
+           marginRight: 5,
+           paddingHorizontal:25
 
         }}>
             {hasIcon && (
-                <Icon name={iconName} size={15} style={{ marginRight: 5 }} />
+                <Icon name={iconName} size={15} style={{ marginHorizontal: 10 }} />
             )}
             <Text style={{ fontSize: 13 }}>{text}</Text>
-        </View>
+        </TouchableOpacity>
     );
 };
 

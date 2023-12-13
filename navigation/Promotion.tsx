@@ -16,12 +16,14 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { FontDisplay } from 'expo-font';
 
 // import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import {Alert} from 'react-native';
 const CARD_BORDER_RADIUS = 10;
 const { width } = Dimensions.get('window');
-
+const iconSize = 20;
+const fontTitle = 14;
 const Promotion = () => {
   const navigation: any = useNavigation();
   return (
@@ -179,7 +181,7 @@ export const PromotionScreen = () => {
             navigationn.openDrawer();
           }}
           name="menu"
-          size={22}
+          size={iconSize}
           style={{
             color: 'white',
             position: 'absolute',
@@ -192,7 +194,7 @@ export const PromotionScreen = () => {
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: fontTitle,
     color: 'white',
     textAlign: 'center',
           }}>
