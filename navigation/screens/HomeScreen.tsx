@@ -1,19 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState,  useMemo, useRef, useCallback} from 'react';
 import MapView from 'react-native-maps';
 import BottomSheet from '@gorhom/bottom-sheet';
-import { StyleSheet, View, TextInput, Text, ScrollView, StatusBar} from 'react-native';
+import { StyleSheet, View, TextInput, Text, ScrollView, StatusBar, Image} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Image } from 'react-native';
 import GoogleMap from '../../compoment/GoogleMap';
 import CategoryView from '../../compoment/CategoryView';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import Card from '../../Card';
+import CategoryItem from '../../compoment/CategoryItem';
 
+const fontTitle = 14;
 
 export default function HomeScreen({ navigation }) {
     const [isImage1, setIsImage1] = useState(true);
+    const bottomSheetRef = useRef<BottomSheet>(null);
+    const snapPoints = useMemo(() => ['14.2%', '90%',], []);
+    const handleSheetChanges = useCallback((index: number) => {
+        console.log('handleSheetChanges', index);
+      }, []);
 
   const toggleImage = () => {
     setIsImage1(!isImage1);
@@ -49,7 +56,7 @@ export default function HomeScreen({ navigation }) {
 
 
 
-            <View style={{width:'auto', marginTop:10,marginLeft:5}}>
+            <View style={{width:'auto', marginTop:10}}>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{}}>
                     <CategoryView text="All" hasIcon={false} iconName="shopping-store" />
                     <CategoryView text="Mobile Services" hasIcon={false} iconName="shopping-store" />
@@ -59,15 +66,52 @@ export default function HomeScreen({ navigation }) {
             </View>
 
 
-            <View style={{ flex: 1, justifyContent: 'center', alignContent: 'flex-end', marginLeft: '85%' }}>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'flex-end', paddingHorizontal: 10}}>
                 <View style={{ width: 40, height: 40, borderRadius: 40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', marginBottom: 10 }}>
                     <Ionicons name="reload" size={22}></Ionicons>
                 </View>
                 <View style={{ width: 40, height: 40, borderRadius: 40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center' }}>
                     <MaterialIcon name="my-location" size={22}></MaterialIcon>
                 </View>
-
-            </View>
+                
+                <BottomSheet
+        ref={bottomSheetRef}
+        index={1}
+        snapPoints={snapPoints}
+    
+        onChange={handleSheetChanges}
+        
+      >
+        <View style={{
+       
+    alignItems: 'center',}}>
+      <Text style={{color: '#19267d', fontWeight: 'bold'}}>Explore</Text>
+        </View>
+        
+        
+        
+                    
+                   <View style={{flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginVertical: 20}}>
+                   <CategoryItem image={require('../../assets/cream.png')} text={'Bleaching'} bgColor={'blue'}/>
+                   <CategoryItem image={require('../../assets/hair-dryer.png')} text={'Blow Dry'} bgColor={'brown'}/>
+                   <CategoryItem image={require('../../assets/hair-dryer.png')} text={'Cocktail'} bgColor={'yellow'}/>
+                   <CategoryItem image={require('../../assets/scissor.png')} text={'Edge Up'} bgColor={'green'}/>
+                   <CategoryItem image={require('../../assets/eyebrow.png')} text={'Eyebrow'} bgColor={'blue'}/>
+                  
+                   </View>
+                   <View style={{flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginVertical: 20}}>
+                   <CategoryItem image={require('../../assets/cream.png')} text={'Bleaching'} bgColor={'blue'}/>
+                   <CategoryItem image={require('../../assets/hair-dryer.png')} text={'Blow Dry'} bgColor={'brown'}/>
+                   <CategoryItem image={require('../../assets/hair-dryer.png')} text={'Cocktail'} bgColor={'yellow'}/>
+                   <CategoryItem image={require('../../assets/scissor.png')} text={'Edge Up'} bgColor={'green'}/>
+                   <CategoryItem image={require('../../assets/eyebrow.png')} text={'Eyebrow'} bgColor={'blue'}/>
+                  
+                   </View>
+                  
+                   <Text style={{ color: '#144389', fontWeight: 'bold', marginVertical: 5, fontSize: fontTitle, marginLeft: 10 }}>Popular Salon</Text>
+      </BottomSheet>
+                </View>
+           
           
 
         </View>
