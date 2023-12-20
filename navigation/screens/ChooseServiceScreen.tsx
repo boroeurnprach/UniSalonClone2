@@ -61,30 +61,24 @@ const ChooseServiceScreen = ({ navigation }) => {
                 {/* content */}
                 <View style={{ alignItems: 'center', marginBottom: 100 }}>
                     <View style={{ flexDirection: 'row', marginBottom: 70 }}>
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'001'} amount={'2'} cash={'2.00'} title={'កាត់សក់នារី'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'002'} amount={'1'} cash={'10.00'} title={'កាត់សក់បែបCEO'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'003'} amount={'4'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
+
                     </View>
                     <View style={{ flexDirection: 'row', marginBottom: 70 }}>
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon2.jpeg')} id={'004'} amount={'1'} cash={'5.00'} title={'កាត់សក់នារី'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon3.jpeg')} id={'005'} amount={'10'} cash={'2.00'} title={'កាត់សក់បែបCEO'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon4.jpeg')} id={'006'} amount={'1'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
+
                     </View>
                     <View style={{ flexDirection: 'row', marginBottom: 70 }}>
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'001'} amount={'1'} cash={'2.00'} title={'កាត់សក់នារី'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'002'} amount={'1'} cash={'2.00'} title={'កាត់សក់បែបCEO'} />
+                        <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'003'} amount={'1'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
+
                     </View>
-                    <View style={{ flexDirection: 'row', marginBottom: 70 }}>
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                    </View>
-                    <View style={{ flexDirection: 'row', marginBottom: 70 }}>
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                        <ChooseSeviceCard onSelect={handleCardSelect} />
-                    </View>
+
                     {/* Add more rows of ChooseServiceCard as needed */}
                 </View>
             </ScrollView>
@@ -94,10 +88,11 @@ const ChooseServiceScreen = ({ navigation }) => {
                     height: 90,
 
                     position: 'absolute',
-                   
+
                     bottom: 0,
                     alignSelf: 'center',
-                    backgroundColor: 'white'
+                    backgroundColor: 'white',
+                    elevation: 20,
                 }}>
                     <TouchableOpacity
                         onPress={handleNextPress}
@@ -109,6 +104,7 @@ const ChooseServiceScreen = ({ navigation }) => {
 
                             borderRadius: 10,
                             justifyContent: 'center',
+                            marginTop: 10
                         }}>
                         <Text style={{ color: 'white', textAlign: 'center' }}>Next</Text>
                     </TouchableOpacity>
