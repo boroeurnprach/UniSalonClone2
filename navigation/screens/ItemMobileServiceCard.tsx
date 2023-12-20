@@ -44,6 +44,7 @@ const ItemMobileServiceCard = ({ image, cash, amount, title }) => {
                 borderColor: 'lightgrey',
                 backgroundColor: isPressed ? 'grey' : 'white',
                 margin: 5,
+                
               }}
             ></View>
           </View>

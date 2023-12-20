@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, ScrollView} from 'react-native';
 import Feature from 'react-native-vector-icons/Feather';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons'
 import Card from '../../Card';
 import Card2 from '../../Card2';
+import Card3 from '../../Card3';
 
 const fontTitle = 14;
 const ShopScreen = ({ navigation }) => {

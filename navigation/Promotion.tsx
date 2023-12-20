@@ -16,7 +16,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { FontDisplay } from 'expo-font';
 
 // import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import {Alert} from 'react-native';
@@ -148,6 +147,7 @@ export const PromotionScreen = () => {
       style={{
         backgroundColor: '#f2f2f2',
         width: '100%',
+        
       }}
       tabStyle={{
         width: width / 2,

@@ -27,10 +27,10 @@
         "googleMaps": {
           "apiKey": "AIzaSyACZpiDyTEWI84nzkccp179MTOZG_BO_rk"
         }
-      },
-      "web": {
-        "favicon": "./assets/favicon.png"
       }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {

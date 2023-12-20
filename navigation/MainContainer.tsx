@@ -39,6 +39,10 @@ import ProfessionalDetail from './screens/ProfessionalDetail';
 import LoadingView from './screens/LoadingAnimation';
 import LoadingAnimation from './screens/LoadingAnimation';
 import FeedBackScreen from './screens/FeedBackScreen';
+import ForgotPasswordScreen from './screens/ForgotPasswordScreen';
+import MakeABooking from './screens/MakeABooking';
+import AssignProfessorScreen from './screens/AssignProfessorScreen';
+import ChooseServiceScreen from './screens/ChooseServiceScreen';
 
 // Screen names
 const homeName = "Home";
@@ -325,6 +329,10 @@ function MainContainer() {
         <Drawer.Screen name="FeedBackScreen" component={FeedBackScreen} />
         <Drawer.Screen name="VideoScreen" component={VideoScreen} />
         <Drawer.Screen name="Promotion" component={Promotion} />
+        <Drawer.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
+        <Drawer.Screen name="MakeABooking" component={MakeABooking} />
+        <Drawer.Screen name="AssignProfessorScreen" component={AssignProfessorScreen} />
+        <Drawer.Screen name="ChooseServiceScreen" component={ChooseServiceScreen} />
 
       </Drawer.Navigator>
     </NavigationContainer>

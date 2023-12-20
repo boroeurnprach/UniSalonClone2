@@ -95,7 +95,7 @@ const Profile = ({navigation}) => {
         <View style={{ width: 'auto', height: 40, backgroundColor: '#f6f6f6', borderRadius: 10, marginTop: 20, marginVertical: 2, justifyContent: 'center' }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 3 }}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}><Icon name="lock" size={20} color="grey" />
-              <Text style={{ marginLeft: 10 }}>******</Text></View>
+              <Text style={{ marginLeft: 10 }}>⭐️⭐️⭐️⭐️⭐️ (7)</Text></View>
             <Text style={{ color: '#16247d', textDecorationLine: 'underline' }}>Edit</Text>
           </View>
 

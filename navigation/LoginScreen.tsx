@@ -197,6 +197,7 @@
 
 import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/Feather';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {
   View,
   Text,
@@ -205,6 +206,8 @@ import {
   StyleSheet,
   Image
 } from 'react-native';
+
+const fontTitle = 14;
 
 const LoginScreen = ({ navigation }) => {
   const onPressLogin = () => {
@@ -224,6 +227,32 @@ const LoginScreen = ({ navigation }) => {
   return (
 
     <View style={styles.container}>
+    <View
+        style={{
+          width: '100%',
+          height: 60,
+          // backgroundColor: '#16247d',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <AntDesign
+          onPress={() => {
+            navigation.navigate("MainTabs");
+          }}
+          name="arrowleft"
+          size={20}
+          style={{
+            color: 'black',
+            position: 'absolute',
+            left: 10,
+            justifyContent: 'center',
+            alignItems: 'center',           
+          
+          }}
+        />
+      
+      </View>
 
       <Image
         style={styles.logo}
@@ -253,7 +282,7 @@ const LoginScreen = ({ navigation }) => {
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={onPressForgotPassword}>
+      <TouchableOpacity onPress={()=> navigation.navigate("ForgotPasswordScreen")}>
         <Text style={styles.forgotAndSignUpText}>Forgot Password?</Text>
       </TouchableOpacity>
 
@@ -295,7 +324,6 @@ const LoginScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#F7F8FA',
     alignItems: 'center',
     justifyContent: 'center',

@@ -3,9 +3,9 @@ import React from 'react'
 
 const CategoryItem = ({text, image, bgColor}) => {
   return (
-    <View style={{alignItems: 'center', height: 50, width: 50, borderRadius: 100, backgroundColor: bgColor, marginHorizontal: 10,}}>
-                   <Image source={image}  style={{ height: 30, width: 30, marginVertical: 9}} />
-                   <Text style={{fontSize: 8}}>{text}</Text>
+    <View style={{alignItems: 'center', height: 40, width: 40, borderRadius: 100, backgroundColor: bgColor, marginHorizontal: 15, alignContent: 'center'}}>
+                   <Image source={image}  style={{ height: 20, width: 20, marginVertical: 10, marginHorizontal: 20}} />
+                   <Text style={{fontSize: 7, textAlign: 'center'}}>{text}</Text>
                    </View>
   )
 }
