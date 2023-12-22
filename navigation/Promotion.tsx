@@ -71,7 +71,7 @@ const Promotion = () => {
             </Text>
             <Text
               style={{
-                color: '#16247d',
+                color: '#134286',
                 fontSize: 14,
                 fontWeight: 'bold',
                 marginTop: 2,
@@ -147,7 +147,7 @@ export const PromotionScreen = () => {
       style={{
         backgroundColor: '#f2f2f2',
         width: '100%',
-        
+
       }}
       tabStyle={{
         width: width / 2,
@@ -155,7 +155,7 @@ export const PromotionScreen = () => {
       renderLabel={({ route, focused, color }) => (
         <Text
           style={{
-            color: focused ? '#16247d' : 'black',
+            color: focused ? '#134286' : 'black',
             margin: 2,
             fontSize: 15,
             fontWeight: 'bold',
@@ -171,7 +171,7 @@ export const PromotionScreen = () => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -187,16 +187,16 @@ export const PromotionScreen = () => {
             position: 'absolute',
             left: 10,
             justifyContent: 'center',
-            alignItems: 'center',           
-          
+            alignItems: 'center',
+
           }}
         />
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: fontTitle,
-    color: 'white',
-    textAlign: 'center',
+            fontSize: fontTitle,
+            color: 'white',
+            textAlign: 'center',
           }}>
           Promotions
         </Text>
@@ -206,7 +206,7 @@ export const PromotionScreen = () => {
           name="ribbon-outline"
           size={35}
           style={{
-            color: '#16247d',
+            color: '#134286',
             paddingRight: 15,
           }}
         />
@@ -215,7 +215,7 @@ export const PromotionScreen = () => {
             style={{
               fontSize: 14,
               fontWeight: 'bold',
-              color: '#16247d',
+              color: '#134286',
             }}>
             Your current points of all salon shops.
           </Text>
@@ -223,7 +223,7 @@ export const PromotionScreen = () => {
             style={{
               fontWeight: 'bold',
               fontSize: 14,
-              color: '#16247d',
+              color: '#134286',
             }}>
             0 Point
           </Text>
@@ -320,7 +320,7 @@ const styles = StyleSheet.create({
   },
   TabBarView: {},
   indicator: {
-    backgroundColor: '#16247d',
+    backgroundColor: '#134286',
     height: 2,
   },
 });

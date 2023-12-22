@@ -34,7 +34,7 @@ const ShopInformation = ({ navigation }) => {
 
             width: '100%',
             height: 60,
-            backgroundColor: '#16247d',
+            backgroundColor: '#134286',
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -314,7 +314,7 @@ const ShopInformation = ({ navigation }) => {
               style={{
                 textDecorationLine: 'underline',
                 fontSize: 16,
-                color: '#16247d',
+                color: '#134286',
                 fontWeight: 'bold',
                 marginTop: 10,
               }}>
@@ -323,7 +323,7 @@ const ShopInformation = ({ navigation }) => {
             <Entypo
               name="location-pin"
               size={20}
-              color={'#16247d'}
+              color={'#134286'}
               style={{
                 marginTop: 10,
               }}
@@ -386,14 +386,14 @@ const ShopInformation = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 15,
-                color: '#16247d',
+                color: '#134286',
                 alignItems: 'center',
                 paddingLeft: '5%',
               }}>
               PROMOTION
             </Text>
           </View>
-          <AntDesign name="right" size={22} color={'#16247d'} style={{}} />
+          <AntDesign name="right" size={22} color={'#134286'} style={{}} />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
@@ -418,14 +418,14 @@ const ShopInformation = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 15,
-                color: '#16247d',
+                color: '#134286',
                 alignItems: 'center',
                 paddingLeft: '5%',
               }}>
               OUR SERVICES
             </Text>
           </View>
-          <AntDesign name="right" size={22} color={'#16247d'} style={{}} />
+          <AntDesign name="right" size={22} color={'#134286'} style={{}} />
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
@@ -450,14 +450,14 @@ const ShopInformation = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 15,
-                color: '#16247d',
+                color: '#134286',
                 alignItems: 'center',
                 paddingLeft: '5%',
               }}>
               JOIN MEMBERSHIP
             </Text>
           </View>
-          <AntDesign name="right" size={22} color={'#16247d'} style={{}} />
+          <AntDesign name="right" size={22} color={'#134286'} style={{}} />
         </TouchableOpacity>
         <View
           style={{
@@ -478,14 +478,14 @@ const ShopInformation = ({ navigation }) => {
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <TouchableOpacity>
               <ProfessorCard image={require('../../assets/user.png')} namePro={"Professor Jordan"}
-                rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetial")} />
+                rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetail")} />
             </TouchableOpacity>
             <ProfessorCard image={require('../../assets/user2.png')} namePro={"Professor Boroeurn"}
-              rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetial")} />
+              rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetail")} />
             <ProfessorCard image={require('../../assets/user3.png')} namePro={"Ms. Nita"}
               rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.push("LoginScreen")} />
             <ProfessorCard image={require('../../assets/user.png')} namePro={"Professor Jordan"}
-              rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetial")} />
+              rate={"⭐⭐⭐⭐⭐"} navigation={() => navigation.navigate("ProfessionalDetail")} />
           </ScrollView>
         </View>
         <View
@@ -546,7 +546,7 @@ const ShopInformation = ({ navigation }) => {
               Silver
             </Text>
           </View>
-          <Text style={{ fontSize: 15, color: '#16247d' }}>
+          <Text style={{ fontSize: 15, color: '#134286' }}>
             200 pts (Dis. 10%)
           </Text>
         </View>
@@ -567,7 +567,7 @@ const ShopInformation = ({ navigation }) => {
               Gold
             </Text>
           </View>
-          <Text style={{ fontSize: 15, color: '#16247d' }}>
+          <Text style={{ fontSize: 15, color: '#134286' }}>
             400 pts (Dis. 15%)
           </Text>
         </View>
@@ -588,7 +588,7 @@ const ShopInformation = ({ navigation }) => {
               Platinum
             </Text>
           </View>
-          <Text style={{ fontSize: 15, color: '#16247d' }}>
+          <Text style={{ fontSize: 15, color: '#134286' }}>
             600 pts (Dis. 20%)
           </Text>
         </View>
@@ -622,7 +622,7 @@ const ShopInformation = ({ navigation }) => {
 
           }}
           style={{
-            backgroundColor: '#16247d',
+            backgroundColor: '#134286',
             paddingHorizontal: 25,
             paddingVertical: 8,
             borderRadius: 6,

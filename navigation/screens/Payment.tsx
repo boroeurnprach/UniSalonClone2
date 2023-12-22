@@ -20,7 +20,7 @@ const Payment = () => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -74,7 +74,7 @@ const Payment = () => {
     //   style={{
     //     flex: 1,
     //     width: 'auto',
-    //     backgroundColor: '#16247d',
+    //     backgroundColor: '#134286',
     //     alignItems: 'center',
     //     paddingHorizontal: 17,
     //   }}></View>

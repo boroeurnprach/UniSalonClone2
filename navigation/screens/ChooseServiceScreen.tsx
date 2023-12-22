@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import ChooseSeviceCard from '../../compoment/ChooseSeviceCard';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 const fontTitle = 14;
@@ -15,16 +16,15 @@ const ChooseServiceScreen = ({ navigation }) => {
     };
 
     const handleNextPress = () => {
-        // Handle the logic for navigating to the next screen or any other action
-        // For example, you can use navigation.navigate('NextScreen');
+
     };
 
     return (
-        <View style={{ flex: 1 }}>
+        <SafeAreaView style={{}}>
             <View style={{
                 width: '100%',
                 height: 60,
-                backgroundColor: '#16247d',
+                backgroundColor: '#134286',
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -64,19 +64,16 @@ const ChooseServiceScreen = ({ navigation }) => {
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'001'} amount={'2'} cash={'2.00'} title={'កាត់សក់នារី'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'002'} amount={'1'} cash={'10.00'} title={'កាត់សក់បែបCEO'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'003'} amount={'4'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
-
                     </View>
                     <View style={{ flexDirection: 'row', marginBottom: 70 }}>
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon2.jpeg')} id={'004'} amount={'1'} cash={'5.00'} title={'កាត់សក់នារី'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon3.jpeg')} id={'005'} amount={'10'} cash={'2.00'} title={'កាត់សក់បែបCEO'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon4.jpeg')} id={'006'} amount={'1'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
-
                     </View>
                     <View style={{ flexDirection: 'row', marginBottom: 70 }}>
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'001'} amount={'1'} cash={'2.00'} title={'កាត់សក់នារី'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'002'} amount={'1'} cash={'2.00'} title={'កាត់សក់បែបCEO'} />
                         <ChooseSeviceCard onSelect={handleCardSelect} background={require('../../assets/salon.jpeg')} id={'003'} amount={'1'} cash={'2.00'} title={'កោរពុកមាត់បុរស'} />
-
                     </View>
 
                     {/* Add more rows of ChooseServiceCard as needed */}
@@ -89,7 +86,7 @@ const ChooseServiceScreen = ({ navigation }) => {
 
                     position: 'absolute',
 
-                    bottom: 0,
+                    bottom: 60,
                     alignSelf: 'center',
                     backgroundColor: 'white',
                     elevation: 20,
@@ -99,7 +96,7 @@ const ChooseServiceScreen = ({ navigation }) => {
                         style={{
                             width: '90%',
                             height: 50,
-                            backgroundColor: '#16247d',
+                            backgroundColor: '#134286',
                             alignSelf: 'center',
 
                             borderRadius: 10,
@@ -110,7 +107,7 @@ const ChooseServiceScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
             )}
-        </View>
+        </SafeAreaView>
     );
 };
 

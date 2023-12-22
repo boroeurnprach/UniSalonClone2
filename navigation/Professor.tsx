@@ -151,7 +151,7 @@ const Professor = () => {
     };
     const ChangeBackground = (index: any) => {
         if (index === 0) {
-            return '#16247d';
+            return '#134286';
         } else if (index === 1) {
             return 'yellow';
         }
@@ -197,7 +197,7 @@ const Professor = () => {
                                             alignSelf: 'center',
                                             fontSize: 12,
                                             fontWeight: 'bold',
-                                            color: '#16247d',
+                                            color: '#134286',
                                             marginTop: 10,
                                         }}>
                                         {item.name}
@@ -220,7 +220,7 @@ const Professor = () => {
                                         }}>
                                         <Entypo
                                             size={16}
-                                            color={'#16247d'}
+                                            color={'#134286'}
                                             name="location-pin"
                                             style={{
                                                 marginTop: 10,
@@ -228,7 +228,7 @@ const Professor = () => {
                                         <Text
                                             style={{
                                                 fontSize: 12,
-                                                color: '#16247d',
+                                                color: '#134286',
                                                 fontWeight: 'bold',
                                                 marginTop: 10,
                                             }}>
@@ -271,7 +271,7 @@ const Professor = () => {
                 style={{
                     width: '100%',
                     height: 60,
-                    backgroundColor: '#16247d',
+                    backgroundColor: '#134286',
                     flexDirection: 'row',
                     alignItems: 'center',
                 }}>
@@ -333,7 +333,7 @@ const Professor = () => {
                                                 borderRadius: 50 / 2,
                                                 // backgroundColor: ItemSelecter(selectColor === index)
                                                 backgroundColor:
-                                                    selectColor === index ? '#16247d' : '#DCDCDC',
+                                                    selectColor === index ? '#134286' : '#DCDCDC',
                                             }}>
                                             <Image
                                                 style={{ width: 30, height: 30 }}
@@ -378,7 +378,7 @@ const styles = StyleSheet.create({
     Circle: {
         width: 60,
         height: 60,
-        backgroundColor: '#16247d',
+        backgroundColor: '#134286',
         borderRadius: 60 / 1,
     },
     Column: {},

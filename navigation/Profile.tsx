@@ -14,7 +14,7 @@ const Profile = ({navigation}) => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -56,8 +56,8 @@ const Profile = ({navigation}) => {
       <View style={{ marginHorizontal: 10 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', }}>
           <Text style={{ fontWeight: 'bold' }}>Account</Text>
-          <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ color: '#16247d', textDecorationLine: 'underline' }}>Edit</Text>
-            <Icon name="user" size={15} style={{ color: '#16247d' }} /></View>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ color: '#134286', textDecorationLine: 'underline' }}>Edit</Text>
+            <Icon name="user" size={15} style={{ color: '#134286' }} /></View>
         </View>
         <View style={{ width: 'auto', height: 40, backgroundColor: '#f6f6f6', borderRadius: 10, marginVertical: 2, marginTop: 20, justifyContent: 'center' }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', }}>
@@ -85,7 +85,7 @@ const Profile = ({navigation}) => {
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 3 }}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}><Icon name="phone" size={20} color="grey" />
               <Text style={{ marginLeft: 10 }}>+85511913234</Text></View>
-            <Text style={{ color: '#16247d', textDecorationLine: 'underline' }}>Edit</Text>
+            <Text style={{ color: '#134286', textDecorationLine: 'underline' }}>Edit</Text>
           </View>
 
 
@@ -96,7 +96,7 @@ const Profile = ({navigation}) => {
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 3 }}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}><Icon name="lock" size={20} color="grey" />
               <Text style={{ marginLeft: 10 }}>⭐️⭐️⭐️⭐️⭐️ (7)</Text></View>
-            <Text style={{ color: '#16247d', textDecorationLine: 'underline' }}>Edit</Text>
+            <Text style={{ color: '#134286', textDecorationLine: 'underline' }}>Edit</Text>
           </View>
 
 

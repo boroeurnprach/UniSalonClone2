@@ -23,7 +23,7 @@ const Settings = () => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -65,7 +65,7 @@ const Settings = () => {
           paddingHorizontal: '5%',
         }}>
         <View style={{ flexDirection: 'row' }}>
-          <Fontisto name="bell" size={20} color={'#16247d'} style={{}} />
+          <Fontisto name="bell" size={20} color={'#134286'} style={{}} />
           <Text style={{ color: 'black', fontSize: 15, marginLeft: 15 }}>
             Allow Notification
           </Text>
@@ -113,7 +113,7 @@ const Settings = () => {
           paddingHorizontal: '5%',
         }}>
         <View style={{ flexDirection: 'row' }}>
-          <AntDesign name="question" size={22} color={'#16247d'} style={{}} />
+          <AntDesign name="question" size={22} color={'#134286'} style={{}} />
           <Text style={{ color: 'black', fontSize: 15, marginLeft: 15 }}>
             About App
           </Text>

@@ -21,7 +21,7 @@ const Membership = () => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -37,19 +37,19 @@ const Membership = () => {
             position: 'absolute',
             left: 10,
             justifyContent: 'center',
-            alignItems: 'center',           
-          
+            alignItems: 'center',
+
           }}
         />
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: fontTitle,
-    color: 'white',
-    textAlign: 'center',
-    
+            fontSize: fontTitle,
+            color: 'white',
+            textAlign: 'center',
+
           }}>
-         Membership
+          Membership
         </Text>
       </View>
       <View
@@ -62,7 +62,7 @@ const Membership = () => {
           name="ribbon-outline"
           size={35}
           style={{
-            color: '#16247d',
+            color: '#134286',
             paddingRight: 15,
             marginLeft: 15,
             marginTop: 15,
@@ -73,7 +73,7 @@ const Membership = () => {
             style={{
               fontSize: 14,
               fontWeight: 'bold',
-              color: '#16247d',
+              color: '#134286',
               marginTop: 10,
             }}>
             Your current points of all salon shops.
@@ -83,7 +83,7 @@ const Membership = () => {
               fontWeight: 'bold',
               fontSize: 15,
               marginTop: 5,
-              color: '#16247d',
+              color: '#134286',
             }}>
             0 Point
           </Text>

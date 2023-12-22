@@ -18,12 +18,12 @@ const Stack = createStackNavigator();
 const fontTitle = 14;
 const VideoScreen = ({ navigation }) => {
   return (
-    <View>
-     <View
+    <SafeAreaView>
+      <View
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -39,17 +39,17 @@ const VideoScreen = ({ navigation }) => {
             position: 'absolute',
             left: 10,
             justifyContent: 'center',
-            alignItems: 'center',           
-          
+            alignItems: 'center',
+
           }}
         />
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: fontTitle,
-    color: 'white',
-    textAlign: 'center',
-    
+            fontSize: fontTitle,
+            color: 'white',
+            textAlign: 'center',
+
           }}>
           Videos
         </Text>
@@ -72,7 +72,7 @@ const VideoScreen = ({ navigation }) => {
         <View style={{ flexDirection: 'row', marginTop: 10, justifyContent: 'center' }}>
           <View style={{ flex: 1, height: 1, backgroundColor: 'grey' }} />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/barber1.jpeg')}
@@ -81,7 +81,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon6.jpeg')}
@@ -90,7 +90,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon2.jpeg')}
@@ -99,7 +99,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon2.jpeg')}
@@ -108,7 +108,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon3.jpeg')}
@@ -117,7 +117,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon5.jpeg')}
@@ -126,7 +126,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon4.jpeg')}
@@ -135,7 +135,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon4.jpeg')}
@@ -144,7 +144,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon4.jpeg')}
@@ -153,7 +153,7 @@ const VideoScreen = ({ navigation }) => {
             onPress={() => navigation.navigate('VideoPlayerScreen')}
           />
         </View>
-        <View style={{marginVertical: 2}}>
+        <View style={{ marginVertical: 2 }}>
           {/* Updated onPress prop */}
           <Card3
             image={require('../../assets/salon4.jpeg')}
@@ -163,7 +163,7 @@ const VideoScreen = ({ navigation }) => {
           />
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -171,28 +171,28 @@ export default VideoScreen;
 
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop: 20,
-        backgroundColor: '#144389',
-        height: 60,
-        width: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        // justifyContent: 'space-between',
-        // marginRight: '50%',
-        // justifyContent: 'center',
+  container: {
+    marginTop: 20,
+    backgroundColor: '#144389',
+    height: 60,
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    // justifyContent: 'space-between',
+    // marginRight: '50%',
+    // justifyContent: 'center',
 
 
-    },
-    textShop: {
-        color: 'white',
-        paddingLeft: '35%',
-        fontWeight: 'bold'
-    },
-    icon: {
-        marginLeft: 10,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
+  },
+  textShop: {
+    color: 'white',
+    paddingLeft: '35%',
+    fontWeight: 'bold'
+  },
+  icon: {
+    marginLeft: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
 
 })

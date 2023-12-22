@@ -22,7 +22,14 @@ const Data = [
     name: 'មែន​ ស្តាយ',
     description:
       'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីអោយកាន់តែមានប្រសិទ្ធភាព គុណភាព...',
-    img: require('../../assets/lambo_car.jpg'),
+    img: require('../../assets/salon2.jpeg'),
+  },
+  {
+    id: '1',
+    name: 'មុីៗ កាត់សក់',
+    description:
+      'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីអោយកាន់តែមានប្រសិទ្ធភាព គុណភាព...',
+    img: require('../../assets/salon.jpeg'),
   },
 ];
 
@@ -82,14 +89,14 @@ const Salons = () => (
                 }}
                 style={{
                   borderWidth: 1,
-                  borderColor: '#144389',
+                  borderColor: '#134286',
                   borderRadius: 6,
                   padding: 3,
                   marginLeft: '10%',
                 }}>
                 <Text
                   style={{
-                    color: '#144389',
+                    color: '#134286',
                     textAlign: 'center',
                     fontSize: 16,
                     fontWeight: 'bold',
@@ -107,9 +114,9 @@ const Salons = () => (
                   alignItems: 'center',
                   marginBottom: 5,
                 }}>
-                <Entypo name="location-pin" size={13} color="#144389" />
+                <Entypo name="location-pin" size={13} color="#134286" />
                 <Text
-                  style={{ fontSize: 12, color: '#144389', fontWeight: 'bold' }}>
+                  style={{ fontSize: 12, color: '#134286', fontWeight: 'bold' }}>
                   None
                 </Text>
               </View>
@@ -123,14 +130,14 @@ const Salons = () => (
                 <Ionicons
                   name="time-outline"
                   size={14}
-                  color={'#16247d'}
+                  color={'#134286'}
                   style={{
                     marginTop: 2,
                     marginLeft: 20,
                   }}
                 />
                 <Text
-                  style={{ fontSize: 12, color: '#144389', fontWeight: 'bold' }}>
+                  style={{ fontSize: 12, color: '#134286', fontWeight: 'bold' }}>
                   Openning
                 </Text>
               </View>
@@ -208,7 +215,7 @@ const Favorite = () => {
     <TabBar
       {...props}
       scrollEnabled
-      indicatorStyle={{ backgroundColor: '#16247d', height: 2 }}
+      indicatorStyle={{ backgroundColor: '#134286', height: 2 }}
       style={{
         backgroundColor: '#f2f2f2',
       }}
@@ -218,7 +225,7 @@ const Favorite = () => {
       renderLabel={({ route, focused, color }) => (
         <Text
           style={{
-            color: focused ? '#16247d' : 'black',
+            color: focused ? '#134286' : 'black',
             margin: 5,
             fontSize: 13,
             fontWeight: 'bold',
@@ -233,7 +240,7 @@ const Favorite = () => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -249,19 +256,19 @@ const Favorite = () => {
             position: 'absolute',
             left: 10,
             justifyContent: 'center',
-            alignItems: 'center',           
-          
+            alignItems: 'center',
+
           }}
         />
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: fontTitle,
-    color: 'white',
-    textAlign: 'center',
-    
+            fontSize: fontTitle,
+            color: 'white',
+            textAlign: 'center',
+
           }}>
-         Favourite
+          Favourite
         </Text>
       </View>
       <View style={{ width: '100%', height: '100%' }}>

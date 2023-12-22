@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, Pressable } from 'react-native'
 import React, { useState } from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
 
@@ -10,7 +10,7 @@ const ChooseProfessor = ({ namePro, image }) => {
     };
 
     return (
-        <TouchableOpacity onPress={handlePress}>
+        <Pressable onPress={handlePress}>
             <View>
                 <View
                     style={{
@@ -20,7 +20,7 @@ const ChooseProfessor = ({ namePro, image }) => {
                         borderRadius: 5,
                         margin: 5,
                         elevation: 2,
-                        
+
                     }}
                 >
 
@@ -41,14 +41,14 @@ const ChooseProfessor = ({ namePro, image }) => {
                     </View>
                     <View style={{ justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
                         <Image source={image} style={{ width: 60, height: 60, borderRadius: 100 }} />
-                        <Text style={{ fontSize: 10, color: '#19267d', fontWeight: 'bold' }}>{namePro}</Text>
+                        <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold' }}>{namePro}</Text>
                         <Text style={{ fontSize: 10 }}>⭐️⭐️⭐️⭐️⭐️ (3)</Text>
                         <Text style={{ fontSize: 10 }}>O Credits/ 0 Reviews</Text>
 
                     </View>
                 </View>
             </View>
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 

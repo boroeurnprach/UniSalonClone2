@@ -5,6 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const MakeABooking = ({ navigation }) => {
     const fontTitle = 14;
@@ -39,12 +40,12 @@ const MakeABooking = ({ navigation }) => {
     };
 
     return (
-        <View>
+        <SafeAreaView>
             <View
                 style={{
                     width: '100%',
                     height: 60,
-                    backgroundColor: '#16247d',
+                    backgroundColor: '#134286',
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -123,12 +124,12 @@ const MakeABooking = ({ navigation }) => {
                 </View>
 
                <TouchableOpacity onPress={()=> navigation.navigate("AssignProfessorScreen")}>
-               <View style={{ borderRadius: 5, width: '100%', height: 50, backgroundColor: '#16297d', justifyContent: 'center' }}>
+               <View style={{ borderRadius: 5, width: '100%', height: 50, backgroundColor: '#134286', justifyContent: 'center' }}>
                     <Text style={{ textAlign: 'center', color: 'white' }}>NEXT</Text>
                 </View>
                </TouchableOpacity>
             </View>
-        </View>
+        </SafeAreaView>
     );
 };
 

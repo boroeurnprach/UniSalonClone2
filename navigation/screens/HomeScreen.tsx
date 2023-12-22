@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useRef, useCallback } from 'react';
 import MapView from 'react-native-maps';
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
-import { StyleSheet, View, TextInput, Text, ScrollView, StatusBar, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, TextInput, Text, ScrollView, StatusBar, Image, Dimensions, Pressable } from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -14,6 +14,7 @@ import CategoryItem from '../../compoment/CategoryItem';
 import Entypo from 'react-native-vector-icons/Entypo';
 import PopularSalon from '../../compoment/PopularSalon';
 import renderInner from '../../compoment/renderInner';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const fontTitle = 14;
 const { width, height } = Dimensions.get('window');
@@ -30,10 +31,10 @@ export default function HomeScreen({ navigation }) {
         setIsImage1(!isImage1);
     };
     return (
-        <View style={{ flex: 1 }}>
+        <SafeAreaView style={{ flex: 1 }}>
             <StatusBar
                 animated={true}
-                backgroundColor="#16247d" />
+                backgroundColor="#134286" />
             <GoogleMap />
             <View style={styles.searchBar}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -44,12 +45,12 @@ export default function HomeScreen({ navigation }) {
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                     <MaterialIcon name="search" size={22} color={'black'} />
-                    <TouchableOpacity onPress={toggleImage}>
+                    <Pressable onPress={toggleImage}>
                         <Image
                             style={{ width: 20, height: 20, borderRadius: 50, marginHorizontal: 5 }}
                             source={isImage1 ? require('../../assets/khmer_flag.png') : require('../../assets/uk_flag.png')}
                         />
-                    </TouchableOpacity>
+                    </Pressable>
                     <MaterialIcon name="notifications-none" size={22} style={{ marginHorizontal: 5 }} />
                 </View>
             </View>
@@ -81,11 +82,11 @@ export default function HomeScreen({ navigation }) {
                 onChange={handleSheetChanges}>
                 <BottomSheetScrollView
                     showsVerticalScrollIndicator={false}
-                    children={renderInner({navigation})}
+                    children={renderInner({ navigation })}
                     contentContainerStyle={{}}
                 />
             </BottomSheet>
-        </View>
+        </SafeAreaView>
     );
 }
 const styles = StyleSheet.create({

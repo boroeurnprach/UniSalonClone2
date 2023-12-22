@@ -5,17 +5,18 @@ import ProfessorCard from '../../compoment/ProfessorCard';
 import Entypo from 'react-native-vector-icons/Entypo'
 import ChooseProfessor from '../../compoment/ChooseProfessor';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const fontTitle = 14;
 
-const AssignProfessorScreen = ({ navigation,}) => {
+const AssignProfessorScreen = ({ navigation, }) => {
     return (
-        <View style={{}}>
+        <SafeAreaView style={{}}>
             <View
                 style={{
                     width: '100%',
                     height: 60,
-                    backgroundColor: '#16247d',
+                    backgroundColor: '#134286',
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -47,7 +48,7 @@ const AssignProfessorScreen = ({ navigation,}) => {
             <View style={{ marginHorizontal: 10, }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', marginVertical: 1 }}>
                     <ChooseProfessor namePro={'Boroeurn Prach'} image={require('../../assets/boroeurn.jpg')} />
-                    <ChooseProfessor namePro={'Vereak'} image={require('../../assets/user.png')} />
+                    <ChooseProfessor namePro={'Vireak'} image={require('../../assets/user.png')} />
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', marginVertical: 1 }}>
                     <ChooseProfessor namePro={'Lina'} image={require('../../assets/user4.png')} />
@@ -60,12 +61,12 @@ const AssignProfessorScreen = ({ navigation,}) => {
                 <TouchableOpacity onPress={() => {
                     navigation.navigate('ChooseServiceScreen');
                 }}>
-                    <View style={{ width: '100%', height: 50, backgroundColor: '#19267d', justifyContent: 'center', marginTop: 50, borderRadius: 5 }}>
+                    <View style={{ width: '100%', height: 50, backgroundColor: '#134286', justifyContent: 'center', marginTop: 50, borderRadius: 5 }}>
                         <Text style={{ color: 'white', textAlign: 'center' }}>Skip</Text>
                     </View>
                 </TouchableOpacity>
             </View>
-        </View>
+        </SafeAreaView>
     )
 }
 

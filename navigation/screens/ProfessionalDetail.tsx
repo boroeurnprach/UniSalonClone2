@@ -4,9 +4,9 @@ import React from 'react'
   import Feather from 'react-native-vector-icons/Feather';
   import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
-const ProfessionalDetail = () => {
+const ProfessionalDetail = ({navigation}) => {
   return (
-  <SafeAreaView style={{flex: 1, backgroundColor: 'lightgrey'}}>
+  <SafeAreaView style={{flex: 1, backgroundColor: '#F2F2F2'}}>
     <View
   style={{
     width: '100%',

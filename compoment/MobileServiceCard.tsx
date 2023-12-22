@@ -11,12 +11,12 @@ const MobileServiceCard = ({ image, title, price, navigation }) => {
       borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginHorizontal: 3, elevation: 1
     }}>
       <Image source={image} style={{ width: 80, height: 80 }} />
-      <Text style={{ fontSize: 12, color: '#16247d' }}>{title}</Text>
+      <Text style={{ fontSize: 12, color: '#134286' }}>{title}</Text>
       <Text style={{ fontSize: 11, color: 'red' }}>{price}</Text>
       <TouchableOpacity onPress={navigation}>
         <Text style={{
           fontSize: 10, fontWeight: 'bold',
-          color: '#16247d', marginTop: 5, borderWidth: 2, padding: 4, borderColor: '#16247d',
+          color: '#134286', marginTop: 5, borderWidth: 2, padding: 4, borderColor: '#134286',
           borderRadius: 5, textAlignVertical: 'center', alignItems: 'center'
         }}>Order Now</Text>
       </TouchableOpacity>

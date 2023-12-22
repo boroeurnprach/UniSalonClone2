@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, Pressable } from 'react-native'
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
 
@@ -18,14 +18,14 @@ const PopularSalon = ({ image, nameShop, description, location, userCount, rate,
         <Text style={{}}>{nameShop}</Text>
         <Text style={{ fontSize: 10 }}>{rate}</Text>
         <Text style={{ fontSize: 10 }}>{description}</Text>
-        <TouchableOpacity>
-          <View style={{ borderColor: '#144389', justifyContent: 'center', width: 160, height: 30, borderWidth: 1, alignSelf: 'center', padding: 3, borderRadius: 4, marginTop: 10 }}>
-            <TouchableOpacity onPress={navigation}>
-              <View style={{ flexDirection: 'row', alignSelf: 'center', }}><Text style={{ color: '#144389', fontWeight: 'bold' }}>Booking Now</Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </TouchableOpacity>
+
+        <View style={{ borderColor: '#134286', width: 160, height: 30, borderWidth: 1, alignSelf: 'center', padding: 3, borderRadius: 4, marginTop: 10 }}>
+          <Pressable onPress={navigation}>
+            <View style={{ flexDirection: 'row', alignSelf: 'center', }}><Text style={{ color: '#134286', fontWeight: 'bold' }}>Booking Now</Text>
+            </View>
+          </Pressable>
+        </View>
+
       </View>
     </View>
   )

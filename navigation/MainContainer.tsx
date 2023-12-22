@@ -194,10 +194,10 @@ function MainTabs() {
 function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props} showsVerticalScrollIndicator={false}>
-      <View>
+      <View style={{ height: '100%' }}>
         <View style={{}}>
           <View style={{}}>
-            <Image source={require('../assets/lambo_car.jpg')} style={{ height: 200, width: '100%' }} />
+            <Image source={require('../assets/salon8.jpg')} style={{ height: 200, width: '100%' }} />
           </View>
           <View style={{}}>
 
@@ -325,7 +325,6 @@ function MainContainer() {
         <Drawer.Screen name="ShopInformation" component={ShopInformation} />
         <Drawer.Screen name="OrderScreen" component={OrderScreen} />
         <Drawer.Screen name="OrderDetail" component={OrderDetail} />
-        <Drawer.Screen name="ProfessionalDetail" component={ProfessionalDetail} />
         <Drawer.Screen name="FeedBackScreen" component={FeedBackScreen} />
         <Drawer.Screen name="VideoScreen" component={VideoScreen} />
         <Drawer.Screen name="Promotion" component={Promotion} />
@@ -333,6 +332,7 @@ function MainContainer() {
         <Drawer.Screen name="MakeABooking" component={MakeABooking} />
         <Drawer.Screen name="AssignProfessorScreen" component={AssignProfessorScreen} />
         <Drawer.Screen name="ChooseServiceScreen" component={ChooseServiceScreen} />
+        <Drawer.Screen name="ProfessionalDetail" component={ProfessionalDetail} />
 
       </Drawer.Navigator>
     </NavigationContainer>

@@ -16,9 +16,9 @@ const NewSalon = ({ image, nameShop, rate }) => {
                 <Text>{nameShop}</Text>
                 <Text style={{ fontSize: 10 }}>{rate}</Text>
 
-                <View style={{ borderColor: '#144389', justifyContent: 'center', width: 160, height: 30, borderWidth: 1, alignSelf: 'center', padding: 3, borderRadius: 4, marginTop: 10 }}>
+                <View style={{ borderColor: '#134286', justifyContent: 'center', width: 160, height: 30, borderWidth: 1, alignSelf: 'center', padding: 3, borderRadius: 4, marginTop: 10 }}>
                     <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-                        <Text style={{ color: '#144389', fontWeight: 'bold' }}>Booking Now</Text>
+                        <Text style={{ color: '#134286', fontWeight: 'bold' }}>Booking Now</Text>
                     </View>
                 </View>
             </View>

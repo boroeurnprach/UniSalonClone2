@@ -161,7 +161,7 @@
 //   Appbar: {
 //     width: 'auto',
 //     height: 80,
-//     backgroundColor: '#16247d',
+//     backgroundColor: '#134286',
 //     flexDirection: 'row',
 //     textAlign: 'center',
 //     alignItems: 'center',
@@ -195,7 +195,7 @@
 //   },
 //   btnNext: {
 //     paddingVertical: 13,
-//     backgroundColor: '#16247d',
+//     backgroundColor: '#134286',
 //     margin: 15,
 //     borderRadius: 5,
 //     alignContent: 'center',
@@ -218,7 +218,7 @@ const OrderScreen = ({navigation}) => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -263,7 +263,7 @@ const OrderScreen = ({navigation}) => {
       <View style={{ flex: 1, justifyContent: 'flex-end', marginBottom: 20, marginHorizontal: 20 }}>
         <Button
           title="Next"
-          color="#16297d"
+          color="#134286"
           accessibilityLabel="Learn more about this purple button"
           onPress={() => {
             navigation.navigate("OrderDetail")

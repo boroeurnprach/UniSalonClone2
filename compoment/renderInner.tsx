@@ -56,7 +56,7 @@ const renderInner = ({ navigation }) => {
   return (
     <View style={{ flex: 1, marginBottom: 70 }}>
       <View style={{ alignItems: 'center', }}>
-        <Text style={{ color: '#19267d', fontWeight: 'bold' }}>Explore</Text>
+        <Text style={{ color: '#134286', fontWeight: 'bold' }}>Explore</Text>
       </View>
 
       <View style={{ backgroundColor: '#faf8f6', marginHorizontal: 10, borderRadius: 10, marginVertical: 5, paddingVertical: 20 }}>
@@ -77,24 +77,29 @@ const renderInner = ({ navigation }) => {
         </View>
       </View>
 
-      <Text style={{ color: '#144389', fontWeight: 'bold', marginVertical: 10, fontSize: fontTitle, marginLeft: 10, }}>Popular Salon</Text>
+      <Text style={{ color: '#134286', fontWeight: 'bold', marginVertical: 10, fontSize: fontTitle, marginLeft: 10, }}>Popular Salon</Text>
 
 
 
 
-      <ScrollView horizontal={true} showsVerticalScrollIndicator={false}>
-        <View style={{ flexDirection: 'row', width: 'auto', height: 200, flex: 1 }}>
+      <View style={{ flexDirection: 'row', width: 'auto', height: 200, }}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
-
-        </View>
-      </ScrollView>
-      <Text style={{ color: '#144389', fontWeight: 'bold', marginVertical: 10, fontSize: fontTitle, marginLeft: 10, }}>Special Promotions</Text>
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
+        </ScrollView>
+      </View>
+      <Text style={{ color: '#134286', fontWeight: 'bold', marginVertical: 10, fontSize: fontTitle, marginLeft: 10, }}>Special Promotions</Text>
       <View style={{ width: 120, height: 180, marginLeft: 10, borderRadius: 20 }}>
         <Image source={require('../assets/salon6.jpeg')} style={{ width: 120, height: 180, borderRadius: 10 }} />
       </View>
-      <Text style={{ color: '#144389', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>Top Rating Salons</Text>
+      <Text style={{ color: '#134286', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>Top Rating Salons</Text>
       <View style={{ flexDirection: 'row', width: 'auto', height: 200 }}>
-        <ScrollView horizontal={true} showsVerticalScrollIndicator={false}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
+          <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
           <PopularSalon description={'បម្រើសេវាកម្មជូនអស់លោក លោកស្រីឲ្យកាន់តែមានប្រសិទ្ធិភាព គុណភាព ទំនុក...'} image={require('../assets/salon.jpeg')} location={'Svay Rieng'} nameShop={'មែន ស្ដាយ'} rate={'⭐️⭐️⭐️⭐️⭐️ (7)'} userCount={'10'} navigation={() => navigation.navigate("MakeABooking")} />
 
         </ScrollView>
@@ -102,61 +107,63 @@ const renderInner = ({ navigation }) => {
 
 
       </View>
-      <Text style={{ color: '#144389', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>Top Rating Professor</Text>
+      <Text style={{ color: '#134286', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>Top Rating Professor</Text>
 
       <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginVertical: 5 }}>
-        <View style={{ width: 170, height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ width: '45%', height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
           <Image source={require('../assets/boroeurn.jpg')} style={{ width: 50, height: 50, borderRadius: 100 }} />
-          <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>Boroeurn Prach</Text>
+          <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>Boroeurn Prach</Text>
           <Text style={{ fontSize: 10 }}>⭐️⭐️⭐️⭐️⭐️ (3)</Text>
           <Text style={{ fontSize: 10 }}>0 Credit /0 Review</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Entypo name="location-pin" size={13} color='blue' />
-            <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>None</Text>
+            <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>None</Text>
           </View>
         </View>
-        <View style={{ width: 170, height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ width: '45%', height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
           <Image source={require('../assets/man.png')} style={{ width: 50, height: 50, borderRadius: 100 }} />
-          <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>Savann Mean</Text>
+          <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>Savann Mean</Text>
           <Text style={{ fontSize: 10 }}>⭐️⭐️⭐️⭐️⭐️ (3)</Text>
           <Text style={{ fontSize: 10 }}>0 Credit /0 Review</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Entypo name="location-pin" size={13} color='blue' />
-            <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>None</Text>
+            <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>None</Text>
           </View>
         </View>
 
 
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginVertical: 5 }}>
-        <View style={{ width: 170, height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ width: '45%', height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
           <Image source={require('../assets/user.png')} style={{ width: 50, height: 50, borderRadius: 100 }} />
-          <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>Boroeurn Prach</Text>
+          <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>Boroeurn Prach</Text>
           <Text style={{ fontSize: 10 }}>⭐️⭐️⭐️⭐️⭐️ (3)</Text>
           <Text style={{ fontSize: 10 }}>0 Credit /0 Review</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Entypo name="location-pin" size={13} color='blue' />
-            <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>None</Text>
+            <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>None</Text>
           </View>
         </View>
 
-        <View style={{ width: 170, height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ width: '45%', height: 180, elevation: 1, marginHorizontal: 3, borderRadius: 10, backgroundColor: '#faf8f6', justifyContent: 'center', alignItems: 'center' }}>
           <Image source={require('../assets/user3.png')} style={{ width: 50, height: 50, borderRadius: 100 }} />
-          <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>Reaksa Rot</Text>
+          <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>Reaksa Rot</Text>
           <Text style={{ fontSize: 10 }}>⭐️⭐️⭐️⭐️⭐️ (3)</Text>
           <Text style={{ fontSize: 10 }}>0 Credit /0 Review</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Entypo name="location-pin" size={13} color='blue' />
-            <Text style={{ fontSize: 10, color: '#144389', fontWeight: 'bold', }}>None</Text>
+            <Text style={{ fontSize: 10, color: '#134286', fontWeight: 'bold', }}>None</Text>
           </View>
         </View>
       </View>
-      <Text style={{ color: '#144389', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>New Salons</Text>
+      <Text style={{ color: '#134286', fontWeight: 'bold', marginBottom: 10, fontSize: fontTitle, marginLeft: 10, }}>New Salons</Text>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <NewSalon image={require('../assets/salon8.jpg')} nameShop={'Teng Barber'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
-        <NewSalon image={require('../assets/salon7.jpeg')} nameShop={'Vicci Beauty Bar'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
-        <NewSalon image={require('../assets/salon8.jpg')} nameShop={'Justin Barber'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <NewSalon image={require('../assets/salon8.jpg')} nameShop={'Teng Barber'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
+          <NewSalon image={require('../assets/salon7.jpeg')} nameShop={'Vicci Beauty Bar'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
+          <NewSalon image={require('../assets/salon8.jpg')} nameShop={'Justin Barber'} rate={'⭐️⭐️⭐️⭐️⭐️ (1)'} />
 
+        </ScrollView>
       </View>
     </View>
 

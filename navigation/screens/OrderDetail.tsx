@@ -12,7 +12,7 @@ const OrderDetail = ({ navigation }) => {
         style={{
           width: '100%',
           height: 60,
-          backgroundColor: '#16247d',
+          backgroundColor: '#134286',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
@@ -28,23 +28,23 @@ const OrderDetail = ({ navigation }) => {
             position: 'absolute',
             left: 10,
             justifyContent: 'center',
-            alignItems: 'center',           
-          
+            alignItems: 'center',
+
           }}
         />
         <Text
           style={{
             fontWeight: 'bold',
-    fontSize: fontTitle,
-    color: 'white',
-    textAlign: 'center',
-    
+            fontSize: fontTitle,
+            color: 'white',
+            textAlign: 'center',
+
           }}>
           Order Details
         </Text>
       </View>
-        <View style={{ marginHorizontal: 5 }}>
-        <Text style={{ color: '#16297d', fontWeight: 'bold' }}>Shop Information</Text>
+      <View style={{ marginHorizontal: 5 }}>
+        <Text style={{ color: '#134286', fontWeight: 'bold' }}>Shop Information</Text>
         <View style={{ flexDirection: 'row', marginHorizontal: 20 }}>
           <View style={{ alignItems: 'flex-end', }}>
             <Text>Name:</Text>
@@ -65,7 +65,7 @@ const OrderDetail = ({ navigation }) => {
         </View>
         <View style={{ height: 1, width: '100%', backgroundColor: 'lightgrey', marginVertical: 20 }}></View>
 
-        <Text style={{ color: '#16297d', fontWeight: 'bold' }}>Order Detail</Text>
+        <Text style={{ color: '#134286', fontWeight: 'bold' }}>Order Detail</Text>
 
         <View style={{ flexDirection: 'row', marginHorizontal: 20 }}>
           <View style={{ alignItems: 'flex-end', }}>
@@ -83,19 +83,19 @@ const OrderDetail = ({ navigation }) => {
         </View>
         <View style={{ height: 1, width: '100%', backgroundColor: 'lightgrey', marginVertical: 20 }}></View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Text style={{ color: '#16297d', fontWeight: 'bold' }}>
+          <Text style={{ color: '#134286', fontWeight: 'bold' }}>
             Select Service
           </Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Text style={{ color: '#16297d', fontWeight: 'bold', textDecorationLine: 'underline' }}>
+            <Text style={{ color: '#134286', fontWeight: 'bold', textDecorationLine: 'underline' }}>
               Add Services
             </Text>
-            <AntDesign name='plus' size={20} style={{ color: '#16297d' }} />
+            <AntDesign name='plus' size={20} style={{ color: '#134286' }} />
           </View>
         </View>
         <ServiceCard />
         <View style={{ height: 1, width: '100%', backgroundColor: 'lightgrey', marginVertical: 20 }}></View>
-        <Text style={{ color: '#16297d', fontWeight: 'bold', marginVertical: 10 }}>Payment Summary</Text>
+        <Text style={{ color: '#134286', fontWeight: 'bold', marginVertical: 10 }}>Payment Summary</Text>
 
         <View style={{ flexDirection: 'row', marginHorizontal: 20 }}>
           <View style={{ alignItems: 'flex-end', }}>
@@ -120,7 +120,7 @@ const OrderDetail = ({ navigation }) => {
             <Text style={{ fontWeight: 'bold' }}>
               0 pts
             </Text>
-            <Text style={{ fontWeight: 'bold', textDecorationLine: 'underline', color: '#16297d' }}>
+            <Text style={{ fontWeight: 'bold', textDecorationLine: 'underline', color: '#134286' }}>
               2 pts
             </Text>
             <Text style={{ fontWeight: 'bold' }}>

@@ -28,7 +28,7 @@ const VideoScreen = ({ navigation }) => {
                 style={{
                     width: '100%',
                     height: 80,
-                    backgroundColor: '#16247d',
+                    backgroundColor: '#134286',
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
