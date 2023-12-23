@@ -19,7 +19,7 @@ const { width, height } = Dimensions.get('window');
 const SideBarFilter = [
     {
         id: 1,
-        icon: require('../assets/menu.png'),
+        icon: require('../assets/list_menu.png'),
         title: 'All Professors',
     },
     {
@@ -336,7 +336,7 @@ const Professor = () => {
                                                     selectColor === index ? '#134286' : '#DCDCDC',
                                             }}>
                                             <Image
-                                                style={{ width: 30, height: 30 }}
+                                                style={{ width: 25, height: 25 }}
                                                 source={item.icon}
                                                 tintColor={ItemSelecter(index)}></Image>
                                         </View>

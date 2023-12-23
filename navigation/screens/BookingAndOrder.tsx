@@ -115,7 +115,7 @@ const BookingAndOrder = () => {
                 height: 250,
                 alignSelf: 'center',
                 marginTop: 10,
-                borderRadius: 5,
+                borderRadius: 7,
                 elevation: 3,
               }}>
               <View style={{ width: '100%', height: '75%' }}>

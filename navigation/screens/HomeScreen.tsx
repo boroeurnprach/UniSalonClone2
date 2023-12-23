@@ -35,7 +35,7 @@ export default function HomeScreen({ navigation }) {
             <StatusBar
                 animated={true}
                 backgroundColor="#134286" />
-            <GoogleMap />
+            {/* <GoogleMap /> */}
             <View style={styles.searchBar}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <TouchableOpacity onPress={() => navigation.openDrawer()}>
